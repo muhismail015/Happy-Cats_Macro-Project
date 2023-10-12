@@ -1,0 +1,829 @@
+/* @import url("https://fonts.googleapis.com/css?family=Montserrat:500"); */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+  scroll-behavior: smooth;
+  /* font-family: "Poppins", sans-serif; */
+  text-decoration: none !important;
+}
+
+hr {
+  color: rgba(0, 0, 0, 0.5) !important;
+}
+
+#temukan-kucing {
+  margin-top: 10rem;
+}
+
+#temukan-kucing li a {
+  color: #000;
+  font-size: 20px;
+}
+
+#temukan-kucing li {
+  color: #00000050;
+  font-size: 20px;
+}
+
+#temukan-kucing .judul h1 {
+  color: #505050;
+}
+
+#temukan-kucing .judul span {
+  font-size: 20px;
+  font-weight: normal;
+}
+
+.search-filter {
+  background-color: #f1a661;
+}
+
+.search-filter .kategori,
+.kota {
+  margin-left: -1rem;
+}
+
+.search-filter button {
+  background-color: rgb(249, 249, 249);
+  color: #505050;
+}
+
+.search-filter button:hover {
+  background-color: #ffd8a9;
+  transition: 0.2s;
+}
+
+.search-filter button:focus {
+  border: 1px solid #fff !important;
+}
+
+.search-filter button:active {
+  background-color: #fff0df !important;
+  transition: 0.1s;
+}
+
+.konten-adopsi .side-kucing {
+  background-color: #f1a661;
+}
+
+.side-kucing hr {
+  border: 1px solid #fff;
+}
+
+.side-kucing h2 {
+  font-size: 1.8rem;
+}
+
+#temukan-kucing .isi-artikel {
+  background-color: #fff;
+}
+
+.isi-artikel p {
+  font-size: 14px;
+}
+
+.isi-artikel span {
+  color: #505050;
+  font-size: 10px;
+}
+
+.isi-artikel hr {
+  border: 1px solid #000000;
+  margin-bottom: -0.1rem;
+}
+
+.side-kucing img {
+  height: 100% !important;
+}
+
+.side-kucing .isi-artikel {
+  margin-top: 0.8rem !important;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
+}
+
+.artikel-foot a:hover {
+  text-decoration: underline !important;
+}
+
+.side-kucing .isi-artikel:hover {
+  box-shadow: 2px 2px 12px rgba(42, 42, 42, 0.3);
+  transition: 0.1s;
+}
+
+.side-kucing .isi-artikel:active {
+  background-color: rgb(246, 246, 246) !important;
+  /* transition: 0.1s; */
+}
+
+.card-footer {
+  background-color: #ffd8a9 !important;
+  padding: 0.5rem auto !important;
+}
+
+.card-footer img {
+  height: 3rem;
+  border: 2px solid #505050;
+  box-shadow: 2px 2px 12px rgba(42, 42, 42, 0.4);
+}
+
+.show-kucing .card-body {
+  background-color: #ffd8a9;
+  color: #505050;
+  padding: 1rem 2.5rem;
+}
+
+.card-footer img {
+  margin-left: 1.5rem;
+}
+
+.card-footer .user-acc {
+  margin-left: -0.2rem;
+}
+
+.show-kucing .card-body p {
+  font-size: 14px;
+}
+
+.show-kucing .card {
+  border: none;
+  box-shadow: 2px 2px 12px rgba(42, 42, 42, 0.2);
+}
+
+.show-kucing .card:hover {
+  box-shadow: 2px 2px 12px rgba(42, 42, 42, 0.3);
+}
+
+.show-kucing .cats-row {
+  margin-top: 0.5rem;
+}
+
+#detail-kucing {
+  margin-top: 10rem;
+}
+
+#detail-kucing li a {
+  color: #000;
+  font-size: 20px;
+}
+
+#detail-kucing li {
+  color: #00000050;
+  font-size: 20px;
+}
+
+.tes.sticky-top {
+  top: 8rem;
+  z-index: 1;
+}
+
+.kucing-lainnya .text-end a {
+  font-size: 20px;
+  color: #505050;
+}
+
+.kucing-lainnya .text-end a:hover {
+  text-decoration: underline !important;
+}
+
+.carousel-indicators button.img-thumbnail {
+  width: 80px;
+}
+
+.carousel-indicators button.img-thumbnail:not(.active) {
+  opacity: 0.7;
+}
+
+.carousel-indicators {
+  position: static !important;
+}
+
+.carousel .carousel-indicators {
+  max-height: 70%;
+  margin: 0 auto;
+}
+
+.carousel-indicators .small-img {
+  /* top: 50%;
+  right: 50%; */
+  transform: translate(0, -50%);
+  margin-top: 3rem;
+}
+
+/* .carousel-indicators .small-img {
+  background-color: red !important;
+} */
+
+#detail-kucing .judul h1 {
+  color: #212020;
+  font-size: 3rem;
+  margin-top: -1rem;
+}
+
+#detail-kucing .data-info p {
+  margin: -0.8rem 0;
+}
+
+.data-info #more {
+  display: none;
+}
+
+#readmore {
+  border: none;
+  background-color: #fff;
+  color: #f1a661;
+  font-size: 18px;
+}
+
+.info-2 table td {
+  border: none;
+  padding: 0;
+}
+
+.data-info .card-footer {
+  padding: 1rem 2rem;
+  border-radius: 10px !important;
+  box-shadow: 1px 1px 12px rgba(42, 42, 42, 0.2);
+}
+
+.data-info .card-footer img {
+  margin-left: -0.5rem;
+}
+
+.data-info .card-footer .user-acc {
+  margin-left: -2rem;
+  margin-top: 1rem;
+}
+
+.user-acc .nama-user {
+  font-size: 20px !important;
+}
+
+.user-acc .lokasi {
+  margin-top: 0.3rem !important;
+  font-size: 15px !important;
+}
+
+.card-footer .detail-user {
+  margin-top: 0.5rem !important;
+}
+.adopsi-card h3 {
+  font-size: 23px;
+}
+
+.adopsi-card {
+  background-color: #ffd8a9;
+  padding: 1.5rem;
+  border-radius: 10px;
+}
+
+.adopsi-card .report {
+  text-align: end;
+  padding-top: 0.5rem;
+  margin-bottom: -0.5rem;
+}
+.report a {
+  color: #505050;
+}
+
+.data-info .desc {
+  font-size: 18px;
+}
+
+.info-2 table {
+  font-size: 18px;
+}
+
+/* .text-start h4 {
+  font-weight: bold;
+} */
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap");
+:root {
+  --primary-text: #171717;
+  --second-text: #505050;
+  --primary: #ffff;
+  --bgc: #e38b29;
+  --second-bgc: #f1a661;
+  --main-color: #ffd8a9;
+  --second-color: #fdeedc;
+}
+
+body {
+  /* font-family: "Poppins", sans-serif; */
+  background-color: var(--primary);
+  color: var(--primary);
+  font-family: "Poppins", sans-serif;
+}
+
+.my-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 1.2rem 9%;
+  background: var(--second-bgc);
+  /* background: rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(50px); */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+}
+
+.my-logo {
+  font-size: 1.6rem;
+  color: var(--primary);
+  font-weight: 600;
+  cursor: default;
+  text-decoration: none;
+}
+
+.my-logo:hover {
+  color: var(--bgc);
+  text-shadow: 0 0 1rem var(--main-color);
+  transition: 0.5s ease;
+}
+
+.my-navbar a {
+  font-size: 1.15rem;
+  color: var(--primary);
+  margin-left: 2rem;
+  text-decoration: none;
+  border: none;
+  outline: none;
+}
+
+.my-navbar a:hover,
+.my-navbar a.active {
+  color: var(--main-color);
+}
+
+#check {
+  display: none;
+}
+
+.btn-nav {
+  display: inline-block;
+  padding: 0.6rem 1.8rem;
+  background: var(--main-color);
+  box-shadow: 0 0 0.8rem var(--main-color);
+  border-radius: 4rem;
+  cursor: pointer;
+  font-size: 1.15rem;
+  color: var(--primary);
+  letter-spacing: 0.1rem;
+  font-weight: 600;
+}
+
+.btn-nav:hover {
+  box-shadow: none;
+  background: var(--bgc);
+  transition: 0.5 ease-in-out;
+}
+
+.burger-menu {
+  /* position: absolute;
+  right: 5%; */
+  font-size: 2.8rem;
+  color: var(--primary);
+  cursor: pointer;
+  display: none;
+}
+
+/* BREAKOUT POINTS */
+@media (max-width: 1200px) {
+  html {
+    font-size: 75%;
+  }
+}
+
+@media (max-width: 992px) {
+  .my-header {
+    padding: 1.2rem 5%;
+  }
+}
+
+@media (max-width: 768px) {
+  /* html {
+    font-size: 62.5%;
+  } */
+  .burger-menu {
+    display: inline-flex;
+  }
+
+  #check:checked ~ .burger-menu #menu-icon {
+    display: none;
+  }
+
+  .burger-menu #close-icon {
+    display: none;
+  }
+  #check:checked ~ .burger-menu #close-icon {
+    display: block;
+  }
+  .my-navbar {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    padding: 0 5%;
+    height: 0;
+    background: var(--second-bgc);
+    border-top: 0.1rem solid rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    transition: 0.5s ease;
+  }
+
+  #check:checked ~ .my-navbar {
+    height: 22rem;
+  }
+  .my-navbar a {
+    display: block;
+    font-size: 1.1rem;
+    margin: 1.5rem 0;
+    text-align: center;
+    transform: translateY(-50px);
+    opacity: 0;
+    transition: 0.5s ease;
+  }
+
+  #check:checked ~ .my-navbar a {
+    transform: translateY(0);
+    opacity: 1;
+    transition-delay: calc(0.12s * var(--i));
+  }
+}
+
+.banner-img {
+  background-image: linear-gradient(
+      to right,
+      rgba(253, 253, 253, 0.829),
+      rgba(255, 255, 255, 0)
+    ),
+    url("/assets/img/banner-donasi.jpg");
+  /* background-size: cover; */
+  padding: 5% 0;
+  margin-top: 4rem;
+  background-size: cover;
+  background-position: center;
+  color: var(--primary);
+}
+
+.banner-img h1 {
+  /* padding-top: 4rem; */
+  font-size: 5rem;
+  font-weight: bold;
+  text-shadow: 1px 1px 10px rgb(105, 105, 105);
+}
+
+#donasi li a {
+  color: #000;
+  font-size: 20px;
+}
+
+#donasi li {
+  color: #00000050;
+  font-size: 20px;
+  margin-top: 2rem;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.input-donasi input {
+  height: 50px;
+}
+
+.input-donasi {
+  padding: 2rem;
+  margin: auto 1rem;
+  background-color: var(--main-color);
+  border-radius: 15px;
+}
+
+.input-donasi.sticky-top {
+  top: 7rem;
+  z-index: 1;
+}
+
+.input-donasi button {
+  background-color: #f1a661;
+}
+
+.input-donasi button:hover {
+  background-color: #e38b29;
+}
+
+.input-donasi button:focus {
+  border: 1px solid #f1a661 !important;
+}
+
+.input-donasi button:active {
+  background-color: #f1a661 !important;
+  transition: 0.1s;
+}
+
+#pembayaran-donasi li a {
+  color: #000;
+  font-size: 20px;
+}
+
+#pembayaran-donasi li {
+  color: #00000050;
+  font-size: 20px;
+  margin-top: 2rem;
+}
+
+#pembayaran-donasi .container {
+  padding: 0 15rem;
+}
+
+.detail-donatur {
+  background-color: #ffd8a9;
+  border-radius: 15px;
+  padding: 30px;
+}
+
+.detail-donatur label {
+  font-size: 18px;
+}
+
+.detail-donatur button {
+  background-color: #e38b29;
+}
+
+.detail-donatur button:hover {
+  background-color: #f1a661;
+}
+
+.btn-foot button {
+  padding: 0.7rem !important;
+}
+
+.footers {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  margin-top: 8rem;
+}
+
+.footer-top {
+  height: 250px;
+  width: 100%;
+  background-color: #ffd8a9;
+  display: flex;
+  grid-template-columns: repeat(4, 1fr);
+  justify-content: space-around;
+  align-items: center;
+}
+
+.footer-logo img {
+  width: 250px;
+  height: auto;
+}
+
+.footers h3 {
+  margin-bottom: 10px;
+}
+
+.footers h5 {
+  margin-bottom: 5px;
+}
+
+.footers p {
+  margin-bottom: 5px;
+}
+
+.footers .navigasi ul li {
+  /* margin-left: 30px; */
+  margin: 0 !important;
+}
+
+.footers .footer-botton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #e38b29;
+  width: 100%;
+  height: 40px;
+  color: #ffff;
+}
+
+.main-container {
+  width: 1200px;
+  margin: 0 auto;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  transform: translate(50%, -50%);
+}
+
+#modal-euy .modal {
+  --bs-modal-bg: none !important;
+  --bs-modal-border-color: none !important;
+}
+
+.grid-login {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  height: 600px;
+  width: 1052px;
+  background-color: #fdeedc;
+  box-shadow: 0 6px 10px;
+  border-radius: 40px;
+  margin: 50px;
+}
+
+/* Image */
+.login-left {
+  margin-left: 50px;
+}
+.login-left img {
+  width: 100%;
+  height: 40%;
+}
+
+/* Form */
+.login-right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.login-right form h4 {
+  font-size: 1.9rem;
+  margin: 15px 0;
+  color: #e38b29;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.login-right label {
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 600px;
+  padding: 5px;
+  margin-bottom: 5px;
+}
+
+.login-right input {
+  display: grid;
+  width: 250px;
+  margin: 5px;
+  border: none;
+  outline: none;
+  border-radius: 20px;
+  padding: 5px;
+  border: 1px solid grey;
+  box-shadow: 4px 2px 4px gray;
+  margin-bottom: 10px;
+}
+
+/* Button */
+.login-right .btn-submit {
+  width: 150px;
+  margin-left: 50px;
+  border-radius: 20px;
+  border: none;
+  outline: none;
+  background-color: #e38b29;
+  box-shadow: 4px 4px 10px #505050;
+  margin: 10px;
+  height: 30px;
+  font-weight: bold;
+  color: white;
+  cursor: pointer;
+  margin-left: 50px;
+  margin-top: 20px;
+}
+.login-right button.btn-submit:hover {
+  background-color: #e89d46;
+  transition: 0.1s;
+  color: #fff !important;
+}
+.login-right p {
+  font-size: 10px;
+  text-align: center;
+  margin-top: 10px;
+  color: #e38b29;
+}
+.login-right p span {
+  color: blue;
+}
+.login-right a:hover {
+  background-color: #e38b29;
+}
+
+.login-right .regis {
+  background-color: transparent !important;
+  color: red;
+  font-size: 18px !important;
+}
+
+.login-right .btn-submit:hover {
+  color: rgb(192, 181, 181) !important;
+}
+
+.login-right .regis:hover {
+  color: rgb(255, 106, 106);
+}
+
+.registrasi-modal form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #fdeedc;
+  box-shadow: 0 6px 10px;
+  border-radius: 20px;
+  width: 400px;
+  height: 700px;
+  /* margin-top: 50px; */
+}
+
+.registrasi-modal h2 {
+  font-size: 1.9rem;
+  margin: 15px 0;
+  color: #e38b29;
+  text-align: center;
+  margin-top: -10px;
+  margin-bottom: 20px;
+}
+.registrasi-modal label {
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 600px;
+  padding: 5px;
+}
+.registrasi-modal input {
+  display: grid;
+  width: 250px;
+  margin: 5px;
+  border: none;
+  outline: none;
+  border-radius: 20px;
+  padding: 5px;
+  border: 1px solid grey;
+  box-shadow: 4px 2px 4px gray;
+}
+
+/* Button */
+.registrasi-modal .btn-submit {
+  width: 200px;
+  border-radius: 20px;
+  border: none;
+  outline: none;
+  background-color: #e38b29;
+  box-shadow: 4px 4px 10px #505050;
+  height: 30px;
+  font-weight: bold;
+  color: white;
+  cursor: pointer;
+  margin-top: 25px;
+}
+.registrasi-modal .btn-submit:hover {
+  /* background-color: rgb(196, 55, 4); */
+}
+
+.registrasi-modal p {
+  margin-top: 10px;
+}
+.registrasi-modal p a {
+  font-size: 10px;
+  text-align: center;
+  color: #e38b29;
+}
+.registrasi-modal a:hover {
+  color: #f1a661;
+}
+
+.registrasi-modal .login {
+  background-color: transparent;
+  font-size: 18px !important;
+}
+
+/* Responsive */
+@media screen and (max-width: 1200px) {
+  .main-container {
+    width: 98%;
+  }
+}

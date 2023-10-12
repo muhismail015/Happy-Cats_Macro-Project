@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Buat Postingan</title>
+
+    <!-- Mengimpor Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+
+    <!-- feather -->
+    <script src="https://unpkg.com/feather-icons"></script>
+
+    <!-- my style -->
+    <link rel="stylesheet" href="css/registrasi.css" />
+  </head>
+
+  <body>
+    <!-- Navbar -->
+    <div class="my-header">
+      <a href="home.html" class="my-logo">
+        <img src="/assets/img/logo.png" alt="Logo" width="80px" />
+      </a>
+
+      <input type="checkbox" id="check" />
+      <label for="check" class="burger-menu">
+        <i class="bx bx-menu" id="menu-icon"></i>
+        <i class="bx bx-x" id="close-icon"></i>
+      </label>
+
+      <nav class="my-navbar">
+        <a href="index.html" style="--i: 0">Beranda</a>
+        <a href="adopsi-kucing.html" style="--i: 1" class="active">Adopsi</a>
+        <a href="donasi.html" style="--i: 2">Donasi</a>
+        <a href="" style="--i: 3">Edukasi</a>
+        <a href="" style="--i: 4">Tentang Kami</a>
+        <a href="" style="--i: 5"><button class="btn-nav">Login</button></a>
+      </nav>
+    </div>
+
+    <!-- SECTION REGISTRASI START -->
+    <section id="registrasi">
+      <p class="judul">
+        Form Registrasi <br /><br />
+        Postingan Adopsi Kucing
+      </p>
+      <div class="tes row">
+        <div class="column" style="background-color: none">
+          <form action="">
+            <label for="name">Nama Kucing</label>
+            <input
+              type="text"
+              name="name"
+              id="name"
+              placeholder="Masukkan nama kucing"
+            />
+            <label for="age">Usia Kucing</label>
+            <input
+              type="text"
+              name="age"
+              id="age"
+              placeholder="Masukkan usia kucing"
+            />
+            <label for="size">Ukuran Kucing</label>
+            <input
+              type="text"
+              name="size"
+              id="size"
+              placeholder="Masukkan nama kucing"
+            />
+            <fieldset>
+              <legend>Jenis Kelamin kucing:</legend>
+              <select id="jeniskelamin" name="jeniskelamin">
+                <option disabled selected>Pilih Jenis Kelamin</option>
+                <option value="jantan">Jantan</option>
+                <option value="betina">Betina</option>
+              </select>
+            </fieldset>
+            <label for="upload">Unggah Gambar</label>
+            <input type="file" name="unggahgambar" id="unggah" />
+            <label for="desc">Deskripsi Kucing</label>
+            <input
+              type="text"
+              name="desc"
+              id="desc"
+              placeholder="Masukkan deskripsi kucing"
+            />
+          </form>
+        </div>
+        <div class="column" style="background-color: none">
+          <form action="">
+            <label for="shelter">Nama Tempat Penampungan</label>
+            <input
+              type="text"
+              name="shelter"
+              id="shelter"
+              placeholder="Masukkan nama tempat"
+            />
+            <label for="owner">Nama Pemilik</label>
+            <input
+              type="text"
+              name="owner"
+              id="owner"
+              placeholder="Masukkan nama pemilik"
+            />
+            <label for="size">Nomor Telp/HP</label>
+            <input
+              type="text"
+              name="size"
+              id="size"
+              placeholder="Masukkan nomor telp/hp"
+            />
+            <label for="address">Alamat</label>
+            <input
+              type="text"
+              name="address"
+              id="address"
+              placeholder="Masukkan alamat"
+            />
+            <input type="submit" value="Simpan" />
+          </form>
+        </div>
+      </div>
+    </section>
+    <!-- SECTION REGISTRASI END -->
+
+    <!-- Footer -->
+    <div class="footers">
+      <div class="footer-top text-dark">
+        <div class="footer-logo">
+          <img src="/assets/img/logo.png" alt="" />
+        </div>
+        <div class="footer-happycats">
+          <h3>Happy Cats</h3>
+          <p>
+            Sebuah tempat hangat dan penuh kasih sayang <br />
+            bersatu untuk dapat memberikan perlindungan <br />
+            terhadap kucing-kucing tanpa tempat tinggal dan <br />
+            memberikan edukasi kepada para pecinta kucing <br />
+            dalam merawat kucing
+          </p>
+        </div>
+        <div class="footer-hubungikami">
+          <h3>Hubungi Kami</h3>
+          <h5>No.Telp/WhatsApp</h5>
+          <p>+6282100000023</p>
+          <h5>Email</h5>
+          <p>happycats@gmail.com</p>
+          <h5>Ikuti Kami</h5>
+          <div class="footer-icon">
+            <a href="#"
+              ><img
+                src="/assets/img/Facebook.png"
+                alt="gambarfacebook"
+                class="facebook"
+            /></a>
+            <a href="#"
+              ><img
+                src="/assets/img/instagram.png"
+                alt="gambarfacebook"
+                class="instagram"
+            /></a>
+            <a href="#"
+              ><img
+                src="/assets/img/Twitter.png"
+                alt="gambarfacebook"
+                class="twitter"
+            /></a>
+          </div>
+        </div>
+        <div class="navigasi">
+          <h3>Navigasi</h3>
+          <ul>
+            <li><a href="index.html">Beranda</a></li>
+            <li><a href="adopsi-kucing.html">Adopsi</a></li>
+            <li><a href="donasi.html">Donasi</a></li>
+            <li><a href="edukasi.html">Edukasi</a></li>
+            <li><a href="tentang-kami.html">Tentang Kami</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-botton">
+        <h5>Copyright 2023 &copy; Happy Cats, All right Reserved</h5>
+      </div>
+    </div>
+
+    <!-- Mengimpor Bootstrap JavaScript -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+
+    <script>
+      feather.replace();
+    </script>
+  </body>
+</html>

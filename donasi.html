@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Donasi</title>
+
+    <link rel="stylesheet" href="css/mycss.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <div class="my-header">
+      <a href="home.html" class="my-logo">
+        <img src="/assets/img/logo.png" alt="Logo" width="80px" />
+      </a>
+
+      <input type="checkbox" id="check" />
+      <label for="check" class="burger-menu">
+        <i class="bx bx-menu" id="menu-icon"></i>
+        <i class="bx bx-x" id="close-icon"></i>
+      </label>
+
+      <nav class="my-navbar">
+        <a href="index.html" style="--i: 0">Beranda</a>
+        <a href="adopsi-kucing.html" style="--i: 1">Adopsi</a>
+        <a href="donasi.html" style="--i: 2" class="active">Donasi</a>
+        <a href="" style="--i: 3">Edukasi</a>
+        <a href="" style="--i: 4">Tentang Kami</a>
+        <a href=""></a>
+        <button
+          class="btn-nav"
+          data-bs-target="#exampleModalToggle"
+          data-bs-toggle="modal"
+        >
+          Login
+        </button>
+      </nav>
+    </div>
+
+    <!-- Banner Donasi -->
+    <section id="donasi">
+      <div class="banner-img">
+        <h1 class="text-center text-light">Donasi</h1>
+      </div>
+
+      <div class="container">
+        <div class="breadcrumb">
+          <nav style="--bs-breadcrumb-divider: '>'" aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="index.html">Beranda</a></li>
+              <li class="breadcrumb-item active" aria-current="page">Donasi</li>
+            </ol>
+          </nav>
+        </div>
+
+        <!-- Program -->
+        <div class="row">
+          <div class="col-8">
+            <div class="program">
+              <h1 class="fw-bold fs-2">
+                Bantu Program Sterilisasi Kucing Gratis, untuk Mengurangi Kucing
+                Terlantar
+              </h1>
+              <hr />
+
+              <img
+                class="img-fluid rounded my-4"
+                style="box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3)"
+                src="/assets/img/img-program1.jpg"
+                alt=""
+              />
+
+              <h1 class="fw-bold fs-2">Mengenai Program</h1>
+              <p class="fs-5 mt-3">
+                Kami adalah sumber utama bagi pecinta kucing dan penampungan
+                kucing. Kami berkomitmen untuk membantu kucing yang membutuhkan
+                bantuan dan memberikan dukungan kepada komunitas pencinta kucing
+                di seluruh dunia. <br /><br />Dukung misi kami untuk merawat
+                kucing-kucing yang membutuhkan. Anda dapat berdonasi untuk
+                membantu penyelamatan kucing, perawatan medis, dan pemeliharaan
+                mereka.
+              </p>
+            </div>
+          </div>
+
+          <!-- Donasi Card -->
+          <div class="col-4">
+            <div class="input-donasi sticky-top">
+              <h3 class="fw-bold">Berikan Donasi Terbaik Anda</h3>
+
+              <form method="post" action="donasi-pembayaran.html">
+                <label class="fw-semibold mb-1">Jumlah Donasi: ( Rp )</label>
+                <input
+                  type="number"
+                  class="form-control"
+                  id="floatingInputValue"
+                  required
+                />
+                <div class="d-grid gap-1 pt-3">
+                  <button class="btn fw-semibold fs-5 text-light" type="submit">
+                    Berdonasi
+                  </button>
+                </div>
+                <p class="fst-italic opacity-50 mt-1">
+                  *Jumlah minimal Rp. 10.000
+                </p>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer -->
+      <div class="footers">
+        <div class="footer-top">
+          <div class="footer-logo">
+            <img src="/assets/img/logo.png" alt="" />
+          </div>
+          <div class="footer-happycats">
+            <h3>Happy Cats</h3>
+            <p>
+              Sebuah tempat hangat dan penuh kasih sayang <br />
+              bersatu untuk dapat memberikan perlindungan <br />
+              terhadap kucing-kucing tanpa tempat tinggal dan <br />
+              memberikan edukasi kepada para pecinta kucing <br />
+              dalam merawat kucing
+            </p>
+          </div>
+          <div class="footer-hubungikami">
+            <h3>Hubungi Kami</h3>
+            <h5>No.Telp/WhatsApp</h5>
+            <p>+6282100000023</p>
+            <h5>Email</h5>
+            <p>happycats@gmail.com</p>
+            <h5>Ikuti Kami</h5>
+            <div class="footer-icon">
+              <a href="#"
+                ><img
+                  src="/assets/img/Facebook.png"
+                  alt="gambarfacebook"
+                  class="facebook"
+              /></a>
+              <a href="#"
+                ><img
+                  src="/assets/img/instagram.png"
+                  alt="gambarfacebook"
+                  class="instagram"
+              /></a>
+              <a href="#"
+                ><img
+                  src="/assets/img/Twitter.png"
+                  alt="gambarfacebook"
+                  class="twitter"
+              /></a>
+            </div>
+          </div>
+          <div class="navigasi">
+            <h3>Navigasi</h3>
+            <ul>
+              <li><a href="index.html">Beranda</a></li>
+              <li><a href="adopsi-kucing.html">Adopsi</a></li>
+              <li><a href="donasi.html">Donasi</a></li>
+              <li><a href="edukasi.html">Edukasi</a></li>
+              <li><a href="tentang-kami.html">Tentang Kami</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer-botton">
+          <h5>Copyright 2023 &copy; Happy Cats, All right Reserved</h5>
+        </div>
+      </div>
+    </section>
+
+    <!-- Modal -->
+    <section id="modal-euy">
+      <!-- Login -->
+      <div
+        class="modal fade"
+        id="exampleModalToggle"
+        aria-hidden="true"
+        aria-labelledby="exampleModalToggleLabel"
+        tabindex="-1"
+      >
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-body">
+              <div class="main-container">
+                <div class="grid-login">
+                  <div class="login-left">
+                    <img src="/assets/img/logo.png" alt="" />
+                  </div>
+                  <div class="login-right">
+                    <form class="contact-form" action="#!">
+                      <h4 class="fs-1 fw-bold">Log In Now</h4>
+                      <div>
+                        <label for="username">Username</label>
+                        <input
+                          type="text"
+                          placeholder="Enter your username"
+                          name="username"
+                        />
+                      </div>
+                      <div>
+                        <label for="password">Password</label>
+                        <input
+                          type="password"
+                          placeholder="Enter your password"
+                          name="password"
+                        />
+                      </div>
+                      <div>
+                        <button class="btn-submit">Login</button>
+                      </div>
+
+                      <p class="fs-5 fw-semibold text-center text-dark">
+                        Belum punya akun?<br />
+                        <button
+                          class="regis fs-6"
+                          data-bs-target="#exampleModalToggle2"
+                          data-bs-toggle="modal"
+                          type="button"
+                        >
+                          Buat akun sekarang
+                        </button>
+                      </p>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Register -->
+      <div
+        class="modal fade"
+        id="exampleModalToggle2"
+        aria-hidden="true"
+        aria-labelledby="exampleModalToggleLabel2"
+        tabindex="-1"
+      >
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-body">
+              <div class="registrasi-modal">
+                <form action="#!">
+                  <h2 class="fs-1 fw-bold">Buat Akun</h2>
+                  <div>
+                    <label for="username">Username</label>
+                    <input
+                      type="text"
+                      placeholder="Enter your username"
+                      name="username"
+                    />
+                  </div>
+                  <div>
+                    <label for="name">Name</label>
+                    <input
+                      type="text"
+                      placeholder="Enter your name"
+                      name="name"
+                    />
+                  </div>
+                  <div>
+                    <label for="email">Email Address</label>
+                    <input
+                      type="email"
+                      placeholder="Enter your email"
+                      name="email"
+                    />
+                  </div>
+                  <div>
+                    <label for="password">Password</label>
+                    <input
+                      type="password"
+                      placeholder="Enter your password"
+                      name="password"
+                    />
+                  </div>
+                  <div>
+                    <label for="confpassword">Confirm Password</label>
+                    <input
+                      type="password"
+                      placeholder="Confirm your password"
+                      name="confpassword"
+                    />
+                  </div>
+                  <div>
+                    <button class="btn-submit">Daftar</button>
+                  </div>
+                  <p class="fs-5 fw-semibold text-center text-dark">
+                    Sudah punya akun?<br />
+                    <button
+                      class="login text-primary"
+                      data-bs-target="#exampleModalToggle"
+                      data-bs-toggle="modal"
+                      type="button"
+                    >
+                      Login
+                    </button>
+                  </p>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

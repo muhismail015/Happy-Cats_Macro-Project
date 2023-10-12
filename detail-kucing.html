@@ -1,0 +1,741 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Detail kucing - Mengoyen</title>
+
+    <link rel="stylesheet" href="css/mycss.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <div class="my-header">
+      <a href="home.html" class="my-logo">
+        <img src="/assets/img/logo.png" alt="Logo" width="80px" />
+      </a>
+
+      <input type="checkbox" id="check" />
+      <label for="check" class="burger-menu">
+        <i class="bx bx-menu" id="menu-icon"></i>
+        <i class="bx bx-x" id="close-icon"></i>
+      </label>
+
+      <nav class="my-navbar">
+        <a href="index.html" style="--i: 0">Beranda</a>
+        <a href="adopsi-kucing.html" style="--i: 1" class="active">Adopsi</a>
+        <a href="donasi.html" style="--i: 2">Donasi</a>
+        <a href="" style="--i: 3">Edukasi</a>
+        <a href="" style="--i: 4">Tentang Kami</a>
+        <a href=""></a>
+        <button
+          class="btn-nav"
+          data-bs-target="#exampleModalToggle"
+          data-bs-toggle="modal"
+        >
+          Login
+        </button>
+      </nav>
+    </div>
+
+    <!-- Detail Kucing -->
+    <section id="detail-kucing">
+      <div class="container">
+        <div class="breadcrumb">
+          <nav style="--bs-breadcrumb-divider: '>'" aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="index.html">Beranda</a></li>
+              <li class="breadcrumb-item">
+                <a href="adopsi-kucing.html">Adopsi</a>
+              </li>
+              <li class="breadcrumb-item">
+                <a href="adopsi-kucing.html">Temukan Kucing</a>
+              </li>
+              <li class="breadcrumb-item active" aria-current="page">
+                Mengoyen
+              </li>
+            </ol>
+          </nav>
+        </div>
+        <hr />
+
+        <!-- main -->
+        <div class="row py-5">
+          <div class="col-4">
+            <div id="carouselExampleIndicators" class="carousel slide">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img
+                    src="/assets/mengoyen.png"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="/assets/mengoyen.png"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="/assets/mengoyen.png"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="/assets/mengoyen.png"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="/assets/mengoyen.png"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+              </div>
+              <div class="carousel-indicators">
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleIndicators"
+                  data-bs-slide-to="0"
+                  class="active img-thumbnail"
+                  aria-current="true"
+                  aria-label="Slide 1"
+                >
+                  <div class="small-img">
+                    <img
+                      src="/assets/mengoyen.png"
+                      class="d-block w-100 rounded mx-auto"
+                      alt="..."
+                    />
+                  </div>
+                </button>
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleIndicators"
+                  data-bs-slide-to="1"
+                  class="img-thumbnail"
+                  aria-label="Slide 2"
+                >
+                  <div class="small-img">
+                    <img
+                      src="/assets/mengoyen.png"
+                      class="d-block w-100 rounded mx-auto"
+                      alt="..."
+                    />
+                  </div>
+                </button>
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleIndicators"
+                  data-bs-slide-to="2"
+                  class="img-thumbnail"
+                  aria-label="Slide 3"
+                >
+                  <div class="small-img">
+                    <img
+                      src="/assets/mengoyen.png"
+                      class="d-block w-100 rounded mx-auto"
+                      alt="..."
+                    />
+                  </div>
+                </button>
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleIndicators"
+                  data-bs-slide-to="3"
+                  class="img-thumbnail"
+                  aria-label="Slide 4"
+                >
+                  <div class="small-img">
+                    <img
+                      src="/assets/mengoyen.png"
+                      class="d-block w-100 rounded mx-auto"
+                      alt="..."
+                    />
+                  </div>
+                </button>
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleIndicators"
+                  data-bs-slide-to="4"
+                  class="img-thumbnail"
+                  aria-label="Slide 5"
+                >
+                  <div class="small-img">
+                    <img
+                      src="/assets/mengoyen.png"
+                      class="d-block w-100 rounded mx-auto"
+                      alt="..."
+                    />
+                  </div>
+                </button>
+              </div>
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+          <div class="col-5 px-5">
+            <div class="judul">
+              <h1 class="fw-bold">Mengoyen</h1>
+              <hr />
+            </div>
+
+            <div class="data-info fs-5">
+              <p class="fw-bold fs-4">Informasi</p>
+              <hr />
+              <p class="desc my-2">
+                Mengoyen tinggal di parkiran. Dibuang diparkiran dan terkena flu
+                parah. Awalnya dia tidak mudah didekati apalagi dipegang.
+                Sekarang Mengoyen sering tidur di kolong mobil. Matanya kadang
+                berair. Mengoyen masih pemalu dan
+                <span id="dots">. . . .</span
+                ><span id="more"
+                  >ragu-ragu untuk mendekati orang. Meskipun sering terlihat
+                  tidur di kolong mobil, sikapnya yang pemalu tidak pernah
+                  sepenuhnya hilang. <br /><br />Meski pernah mengalami flu
+                  parah karena tinggal di parkiran, kini Mengoyen tampak lebih
+                  sehat. Namun, mata berairnya kadang-kadang mengungkapkan masa
+                  lalu yang sulit. Setiap kali Anda mendekatinya, Mengoyen
+                  mungkin akan merespon dengan tatapan penuh kecurigaan, tetapi
+                  sedikit demi sedikit, kepercayaan dirinya tumbuh.</span
+                >
+                <br /><br />
+                <button onclick="readMore()" id="readmore" class="fw-semibold">
+                  Lihat Selengkapnya...
+                </button>
+              </p>
+              <hr />
+              <div class="info-2">
+                <table class="table">
+                  <tr>
+                    <td>Jenis Kelamin</td>
+                    <td>: Jantan</td>
+                  </tr>
+                  <tr>
+                    <td>Usia</td>
+                    <td>: 1 - 2 tahun</td>
+                  </tr>
+                  <tr>
+                    <td>Ukuran</td>
+                    <td>: Lumayan Besar</td>
+                  </tr>
+                  <tr>
+                    <td>Lokasi</td>
+                    <td>: Jakarta Selatanr</td>
+                  </tr>
+                </table>
+              </div>
+              <hr />
+              <div class="card-footer">
+                <div class="row">
+                  <div class="col-3">
+                    <img
+                      class="img-fluid rounded-5"
+                      src="/assets/mengoyen.png"
+                      alt=""
+                    />
+                  </div>
+                  <div class="col-6">
+                    <div class="user-acc">
+                      <p class="nama-user fw-bold">Abdul Rozak <br /></p>
+                      <p class="lokasi fw-normal">
+                        <i class="fa-solid fa-location-dot text-danger"></i>
+                        Jakarta Utara
+                      </p>
+                    </div>
+                  </div>
+                  <div class="col-3">
+                    <a
+                      href="#!"
+                      class="detail-user btn btn-light fw-semibold d-block"
+                      >Profil</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-3">
+            <div class="adopsi-card">
+              <h3>Tertarik untuk adopsi Mengoyen ?</h3>
+              <hr />
+
+              <a href="#!" class="btn btn-light d-block fw-semibold"
+                ><i class="fa-brands fa-whatsapp" style="color: #3bb332"></i>
+                Ajukan Adopsi</a
+              >
+              <a
+                href="adopsi-kucing.html"
+                class="btn btn-light d-block my-2 fw-semibold"
+                ><i class="fa-solid fa-angle-left"></i> Kembali</a
+              >
+
+              <p class="report">
+                <a href="#!">Laporkan</a>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <hr />
+        <!-- Kucing Adopsi Lainnya -->
+        <div class="kucing-lainnya mt-5">
+          <div class="row">
+            <div class="col text-start">
+              <h4 class="fw-semibold">Kucing Adopsi Lainnya</h4>
+            </div>
+            <div class="col text-end">
+              <a href="adopsi-kucing.html"
+                >Lihat Semua <i class="fa-solid fa-angles-right"></i
+              ></a>
+            </div>
+          </div>
+
+          <!-- Tampil kucing -->
+          <div class="show-kucing">
+            <!-- Cats -->
+            <div class="cats-row row row-cols-1 row-cols-md-4 g-5">
+              <!-- Cat -->
+              <div class="col">
+                <a href="detail.kucing.html">
+                  <div class="card h-200">
+                    <img
+                      src="/assets/mengoyen.png"
+                      class="card-img-top"
+                      alt="kucing"
+                    />
+                    <div class="card-body">
+                      <h2 class="card-title fw-bold">Mengoyen</h2>
+                      <hr />
+                      <p class="card-text fw-semibold opacity-75">
+                        Mengoyen tinggal di parkiran. Dibuang diparkiran dan
+                        terkena flu parah. Awalnya ......
+                      </p>
+                    </div>
+                    <div class="card-footer">
+                      <div class="row">
+                        <div class="col-4">
+                          <img
+                            class="img-fluid rounded-5"
+                            src="/assets/mengoyen.png"
+                            alt=""
+                          />
+                        </div>
+                        <div class="col-8">
+                          <div class="user-acc">
+                            <p class="fw-bold">
+                              Abdul Rozak <br />
+                              <small class="text-body-secondary fw-normal"
+                                ><i
+                                  class="fa-solid fa-location-dot text-danger"
+                                ></i>
+                                Jakarta Utara</small
+                              >
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <!-- Cat -->
+              <div class="col">
+                <a href="#!">
+                  <div class="card h-200">
+                    <img
+                      src="/assets/clara.png"
+                      class="card-img-top"
+                      alt="kucing"
+                    />
+                    <div class="card-body">
+                      <h2 class="card-title fw-bold">Clara</h2>
+                      <hr />
+                      <p class="card-text fw-semibold opacity-75">
+                        Clara adalah salah satu kucing betina yang ditangkap di
+                        awal April dari Menteng dan ......
+                      </p>
+                    </div>
+                    <div class="card-footer">
+                      <div class="row">
+                        <div class="col-4">
+                          <img
+                            class="img-fluid rounded-5"
+                            src="/assets/mengoyen.png"
+                            alt=""
+                          />
+                        </div>
+                        <div class="col-8">
+                          <div class="user-acc">
+                            <p class="fw-bold">
+                              Abdul Rozak <br />
+                              <small class="text-body-secondary fw-normal"
+                                ><i
+                                  class="fa-solid fa-location-dot text-danger"
+                                ></i>
+                                Jakarta Utara</small
+                              >
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <!-- Cat -->
+              <div class="col">
+                <a href="#!">
+                  <div class="card h-200">
+                    <img
+                      src="/assets/riki.png"
+                      class="card-img-top"
+                      alt="kucing"
+                    />
+                    <div class="card-body">
+                      <h2 class="card-title fw-bold">Riki</h2>
+                      <hr />
+                      <p class="card-text fw-semibold opacity-75">
+                        Riki sudah steril, agak penakut dan galak dengan kucing
+                        lain, tapi sebenarnya sangat ......
+                      </p>
+                    </div>
+                    <div class="card-footer">
+                      <div class="row">
+                        <div class="col-4">
+                          <img
+                            class="img-fluid rounded-5"
+                            src="/assets/mengoyen.png"
+                            alt=""
+                          />
+                        </div>
+                        <div class="col-8">
+                          <div class="user-acc">
+                            <p class="fw-bold">
+                              Abdul Rozak <br />
+                              <small class="text-body-secondary fw-normal"
+                                ><i
+                                  class="fa-solid fa-location-dot text-danger"
+                                ></i>
+                                Jakarta Utara</small
+                              >
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <!-- Cat -->
+              <div class="col">
+                <a href="#!">
+                  <div class="card h-200">
+                    <img
+                      src="/assets/mamo.png"
+                      class="card-img-top"
+                      alt="kucing"
+                    />
+                    <div class="card-body">
+                      <h2 class="card-title fw-bold">Mamo</h2>
+                      <hr />
+                      <p class="card-text fw-semibold opacity-75">
+                        Riki sudah steril, agak penakut dan galak dengan kucing
+                        lain, tapi sebenarnya sangat ......
+                      </p>
+                    </div>
+                    <div class="card-footer">
+                      <div class="row">
+                        <div class="col-4">
+                          <img
+                            class="img-fluid rounded-5"
+                            src="/assets/mengoyen.png"
+                            alt=""
+                          />
+                        </div>
+                        <div class="col-8">
+                          <div class="user-acc">
+                            <p class="fw-bold">
+                              Abdul Rozak <br />
+                              <small class="text-body-secondary fw-normal"
+                                ><i
+                                  class="fa-solid fa-location-dot text-danger"
+                                ></i>
+                                Jakarta Utara</small
+                              >
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer -->
+      <div class="footers">
+        <div class="footer-top">
+          <div class="footer-logo">
+            <img src="/assets/img/logo.png" alt="" />
+          </div>
+          <div class="footer-happycats">
+            <h3>Happy Cats</h3>
+            <p>
+              Sebuah tempat hangat dan penuh kasih sayang <br />
+              bersatu untuk dapat memberikan perlindungan <br />
+              terhadap kucing-kucing tanpa tempat tinggal dan <br />
+              memberikan edukasi kepada para pecinta kucing <br />
+              dalam merawat kucing
+            </p>
+          </div>
+          <div class="footer-hubungikami">
+            <h3>Hubungi Kami</h3>
+            <h5>No.Telp/WhatsApp</h5>
+            <p>+6282100000023</p>
+            <h5>Email</h5>
+            <p>happycats@gmail.com</p>
+            <h5>Ikuti Kami</h5>
+            <div class="footer-icon">
+              <a href="#"
+                ><img
+                  src="/assets/img/Facebook.png"
+                  alt="gambarfacebook"
+                  class="facebook"
+              /></a>
+              <a href="#"
+                ><img
+                  src="/assets/img/instagram.png"
+                  alt="gambarfacebook"
+                  class="instagram"
+              /></a>
+              <a href="#"
+                ><img
+                  src="/assets/img/Twitter.png"
+                  alt="gambarfacebook"
+                  class="twitter"
+              /></a>
+            </div>
+          </div>
+          <div class="navigasi">
+            <h3>Navigasi</h3>
+            <ul>
+              <li><a href="index.html">Beranda</a></li>
+              <li><a href="adopsi-kucing.html">Adopsi</a></li>
+              <li><a href="donasi.html">Donasi</a></li>
+              <li><a href="edukasi.html">Edukasi</a></li>
+              <li><a href="tentang-kami.html">Tentang Kami</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer-botton">
+          <h5>Copyright 2023 &copy; Happy Cats, All right Reserved</h5>
+        </div>
+      </div>
+    </section>
+
+    <!-- Modal -->
+    <section id="modal-euy">
+      <!-- Login -->
+      <div
+        class="modal fade"
+        id="exampleModalToggle"
+        aria-hidden="true"
+        aria-labelledby="exampleModalToggleLabel"
+        tabindex="-1"
+      >
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-body">
+              <div class="main-container">
+                <div class="grid-login">
+                  <div class="login-left">
+                    <img src="/assets/img/logo.png" alt="" />
+                  </div>
+                  <div class="login-right">
+                    <form class="contact-form" action="#!">
+                      <h4 class="fs-1 fw-bold">Log In Now</h4>
+                      <div>
+                        <label for="username">Username</label>
+                        <input
+                          type="text"
+                          placeholder="Enter your username"
+                          name="username"
+                        />
+                      </div>
+                      <div>
+                        <label for="password">Password</label>
+                        <input
+                          type="password"
+                          placeholder="Enter your password"
+                          name="password"
+                        />
+                      </div>
+                      <div>
+                        <button class="btn-submit">Login</button>
+                      </div>
+
+                      <p class="fs-5 fw-semibold text-center text-dark">
+                        Belum punya akun?<br />
+                        <button
+                          class="regis fs-6"
+                          data-bs-target="#exampleModalToggle2"
+                          data-bs-toggle="modal"
+                          type="button"
+                        >
+                          Buat akun sekarang
+                        </button>
+                      </p>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Register -->
+      <div
+        class="modal fade"
+        id="exampleModalToggle2"
+        aria-hidden="true"
+        aria-labelledby="exampleModalToggleLabel2"
+        tabindex="-1"
+      >
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-body">
+              <div class="registrasi-modal">
+                <form action="#!">
+                  <h2 class="fs-1 fw-bold">Buat Akun</h2>
+                  <div>
+                    <label for="username">Username</label>
+                    <input
+                      type="text"
+                      placeholder="Enter your username"
+                      name="username"
+                    />
+                  </div>
+                  <div>
+                    <label for="name">Name</label>
+                    <input
+                      type="text"
+                      placeholder="Enter your name"
+                      name="name"
+                    />
+                  </div>
+                  <div>
+                    <label for="email">Email Address</label>
+                    <input
+                      type="email"
+                      placeholder="Enter your email"
+                      name="email"
+                    />
+                  </div>
+                  <div>
+                    <label for="password">Password</label>
+                    <input
+                      type="password"
+                      placeholder="Enter your password"
+                      name="password"
+                    />
+                  </div>
+                  <div>
+                    <label for="confpassword">Confirm Password</label>
+                    <input
+                      type="password"
+                      placeholder="Confirm your password"
+                      name="confpassword"
+                    />
+                  </div>
+                  <div>
+                    <button class="btn-submit">Daftar</button>
+                  </div>
+                  <p class="fs-5 fw-semibold text-center text-dark">
+                    Sudah punya akun?<br />
+                    <button
+                      class="login text-primary"
+                      data-bs-target="#exampleModalToggle"
+                      data-bs-toggle="modal"
+                      type="button"
+                    >
+                      Login
+                    </button>
+                  </p>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/db3e01df23.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <script>
+      function readMore() {
+        var dots = document.getElementById("dots");
+        var moreText = document.getElementById("more");
+        var btnText = document.getElementById("readmore");
+
+        if (dots.style.display === "none") {
+          dots.style.display = "inline";
+          btnText.innerHTML = "Lihat Selengkapnya";
+          moreText.style.display = "none";
+        } else {
+          dots.style.display = "none";
+          btnText.innerHTML = "Baca Lebih Sedikit";
+          moreText.style.display = "inline";
+        }
+      }
+    </script>
+  </body>
+</html>

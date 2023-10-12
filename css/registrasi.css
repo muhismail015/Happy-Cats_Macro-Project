@@ -1,0 +1,372 @@
+:root {
+  --primary-amel: #ffd8a9;
+  --bg: #f1a661;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+}
+
+body {
+  font-family: sans-serif;
+  background-color: var(--bg);
+  color: #fff;
+}
+
+/* navbar */
+/* .navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 7%;
+  background-color: var(--bg);
+  border-bottom: 1px solid var(--bg);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+}
+
+.navbar a {
+  color: #fff;
+  display: inline-block;
+  font-size: 22px;
+  margin: 0 1rem;
+  text-decoration: none;
+} */
+
+#keluar-link {
+  font-size: 22px;
+  font-style: italic;
+}
+
+/* .navbar a:hover {
+  color: var(--primary);
+} */
+
+#registrasi {
+  background-color: #ffd8a9;
+  padding-top: 3rem;
+  /* padding: 5rem; */
+  width: 1042px;
+  height: 745px;
+  margin: 100px auto;
+  background-color: var(--primary-amel);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+  border-radius: 40px;
+  margin-top: 10rem;
+}
+
+#registrasi p {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: bold;
+  color: #eaae6e;
+  font-size: 50px;
+  line-height: 20px;
+  text-align: center;
+  margin-bottom: 35px;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+  margin: 30px;
+  padding: 20px;
+  background-color: var(--primary-amel);
+}
+
+.column {
+  width: 353px;
+  height: 528px;
+  /* box-shadow: 2px 12px 18px rgba(0, 0, 0, 0.2); */
+  align-items: center;
+  /* justify-content: center; */
+  display: flex;
+  flex-direction: column;
+  margin: 0px 40px;
+}
+
+input[type="text"] {
+  color: #0000006b;
+  font-size: 18px;
+  width: 353px;
+  height: 39px;
+  padding: 12px;
+  border-radius: 20px;
+  box-sizing: border-box;
+  box-shadow: 0 4px 0 rgba(0, 0, 0, 0.2);
+  margin-top: 2px;
+  margin-bottom: 10px;
+  resize: vertical;
+}
+
+/* #desc {
+  height: 123px;
+  width: 353px;
+  padding-top: 0;
+} */
+
+/* #address {
+  height: 123px;
+  width: 353px;
+  padding-top: 0;
+} */
+
+input[type="submit"] {
+  height: 44px;
+  width: 210px;
+  margin-top: 20px;
+  margin-left: 4.5rem;
+  font-size: 20px;
+  background-color: #e38b29;
+  color: #fff;
+  border-radius: 40px;
+  box-shadow: 0 7px 6px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+}
+
+input[type="text"][value="Felicia"],
+input[type="text"][value="feliciaa01"],
+input[type="text"][value="flciaangel@gmail.com"] {
+  padding-left: 1rem;
+}
+
+input[type="submit"]:hover {
+  background-color: #d39956;
+}
+
+label,
+legend {
+  font-weight: 650px;
+  color: #505050;
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 0;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap");
+:root {
+  --primary-text: #171717;
+  --second-text: #505050;
+  --primary: #ffff;
+  --bgc: #e38b29;
+  --second-bgc: #f1a661;
+  --main-color: #ffd8a9;
+  --second-color: #fdeedc;
+}
+
+body {
+  /* font-family: "Poppins", sans-serif; */
+  background-color: var(--primary);
+  color: var(--primary);
+  font-family: "Poppins", sans-serif;
+}
+
+.my-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 1.2rem 9%;
+  background: var(--second-bgc);
+  /* background: rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(50px); */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+}
+
+.my-logo {
+  font-size: 1.6rem;
+  color: var(--primary);
+  font-weight: 600;
+  cursor: default;
+  text-decoration: none;
+}
+
+.my-logo:hover {
+  color: var(--bgc);
+  text-shadow: 0 0 1rem var(--main-color);
+  transition: 0.5s ease;
+}
+
+.my-navbar a {
+  font-size: 1.15rem;
+  color: var(--primary);
+  margin-left: 2rem;
+  text-decoration: none;
+  border: none;
+  outline: none;
+}
+
+.my-navbar a:hover,
+.my-navbar a.active {
+  color: var(--main-color);
+}
+
+#check {
+  display: none;
+}
+
+.btn-nav {
+  display: inline-block;
+  padding: 0.6rem 1.8rem;
+  background: var(--main-color);
+  box-shadow: 0 0 0.8rem var(--main-color);
+  border-radius: 4rem;
+  cursor: pointer;
+  font-size: 1.15rem;
+  color: var(--primary);
+  letter-spacing: 0.1rem;
+  font-weight: 600;
+}
+
+.btn-nav:hover {
+  box-shadow: none;
+  background: var(--bgc);
+  transition: 0.5 ease-in-out;
+}
+
+.burger-menu {
+  /* position: absolute;
+  right: 5%; */
+  font-size: 2.8rem;
+  color: var(--primary);
+  cursor: pointer;
+  display: none;
+}
+
+/* BREAKOUT POINTS */
+@media (max-width: 1200px) {
+  html {
+    font-size: 75%;
+  }
+}
+
+@media (max-width: 992px) {
+  .my-header {
+    padding: 1.2rem 5%;
+  }
+}
+
+@media (max-width: 768px) {
+  /* html {
+    font-size: 62.5%;
+  } */
+  .burger-menu {
+    display: inline-flex;
+  }
+
+  #check:checked ~ .burger-menu #menu-icon {
+    display: none;
+  }
+
+  .burger-menu #close-icon {
+    display: none;
+  }
+  #check:checked ~ .burger-menu #close-icon {
+    display: block;
+  }
+  .my-navbar {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    padding: 0 5%;
+    height: 0;
+    background: var(--second-bgc);
+    border-top: 0.1rem solid rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    transition: 0.5s ease;
+  }
+
+  #check:checked ~ .my-navbar {
+    height: 22rem;
+  }
+  .my-navbar a {
+    display: block;
+    font-size: 1.1rem;
+    margin: 1.5rem 0;
+    text-align: center;
+    transform: translateY(-50px);
+    opacity: 0;
+    transition: 0.5s ease;
+  }
+
+  #check:checked ~ .my-navbar a {
+    transform: translateY(0);
+    opacity: 1;
+    transition-delay: calc(0.12s * var(--i));
+  }
+}
+
+.footers {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  margin-top: 8rem;
+}
+
+.footer-top {
+  height: 250px;
+  width: 100%;
+  background-color: #ffd8a9;
+  display: flex;
+  grid-template-columns: repeat(4, 1fr);
+  justify-content: space-around;
+  align-items: center;
+}
+
+.footer-logo img {
+  width: 250px;
+  height: auto;
+}
+
+.footers h3 {
+  margin-bottom: 10px;
+}
+
+.footers h5 {
+  margin-bottom: 5px;
+}
+
+.footers p {
+  margin-bottom: 5px;
+}
+
+.footers .navigasi ul li a {
+  /* margin-left: 30px; */
+  margin: 0;
+  color: #505050;
+}
+
+.footers .footer-botton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #e38b29;
+  width: 100%;
+  height: 40px;
+  color: #ffff;
+}
+
+#registrasi .judul {
+  background-image: linear-gradient(45deg, #eaae6e, #e09544);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+  padding: 1rem 0 2rem 0;
+}
