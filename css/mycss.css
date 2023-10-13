@@ -465,7 +465,7 @@ body {
       rgba(253, 253, 253, 0.829),
       rgba(255, 255, 255, 0)
     ),
-    url("/assets/img/banner-donasi.jpg");
+    url("../assets/img/banner-donasi.jpg");
   /* background-size: cover; */
   padding: 5% 0;
   margin-top: 4rem;
