@@ -221,9 +221,9 @@
             </div>
 
             <div class="data-info fs-5">
-              <p class="fw-bold fs-4">Informasi</p>
+              <p class="fw-semibold fs-4 opacity-75">Informasi</p>
               <hr />
-              <p class="desc my-2">
+              <p class="desc my-2 opacity-75">
                 Mengoyen tinggal di parkiran. Dibuang diparkiran dan terkena flu
                 parah. Awalnya dia tidak mudah didekati apalagi dipegang.
                 Sekarang Mengoyen sering tidur di kolong mobil. Matanya kadang
@@ -240,20 +240,28 @@
                   sedikit demi sedikit, kepercayaan dirinya tumbuh.</span
                 >
                 <br /><br />
-                <button onclick="readMore()" id="readmore" class="fw-semibold">
+                <button
+                  onclick="readMore()"
+                  id="readmore"
+                  class="fw-semibold fs-6"
+                >
                   Lihat Selengkapnya...
                 </button>
               </p>
               <hr />
               <div class="info-2">
-                <table class="table">
+                <table class="table opacity-75">
                   <tr>
                     <td>Jenis Kelamin</td>
                     <td>: Jantan</td>
                   </tr>
                   <tr>
+                    <td>Kategori</td>
+                    <td>: Dewasa</td>
+                  </tr>
+                  <tr>
                     <td>Usia</td>
-                    <td>: 1 - 2 tahun</td>
+                    <td>: 2 - 3 tahun</td>
                   </tr>
                   <tr>
                     <td>Ukuran</td>
@@ -261,30 +269,32 @@
                   </tr>
                   <tr>
                     <td>Lokasi</td>
-                    <td>: Jakarta Selatanr</td>
+                    <td>: Jakarta Selatan</td>
                   </tr>
                 </table>
               </div>
               <hr />
-              <div class="card-footer">
+
+              <!-- Account -->
+              <div class="card-footer-detail">
                 <div class="row">
-                  <div class="col-3">
+                  <div class="col-3 d-flex align-items-center">
                     <img
                       class="img-fluid rounded-5"
-                      src="./assets/mengoyen.png"
+                      src="https://i.pravatar.cc/300?img=14"
                       alt=""
                     />
                   </div>
-                  <div class="col-6">
+                  <div class="col-6 d-flex align-items-center">
                     <div class="user-acc">
                       <p class="nama-user fw-bold">Abdul Rozak <br /></p>
                       <p class="lokasi fw-normal">
                         <i class="fa-solid fa-location-dot text-danger"></i>
-                        Jakarta Utara
+                        Jakarta
                       </p>
                     </div>
                   </div>
-                  <div class="col-3">
+                  <div class="col-3 d-flex align-items-center">
                     <a
                       href="#!"
                       class="detail-user btn btn-light fw-semibold d-block"
@@ -300,19 +310,72 @@
               <h3>Tertarik untuk adopsi Mengoyen ?</h3>
               <hr />
 
-              <a href="#!" class="btn btn-light d-block fw-semibold"
-                ><i class="fa-brands fa-whatsapp" style="color: #3bb332"></i>
-                Ajukan Adopsi</a
+              <a
+                href="https://wa.me/62896688800012"
+                target="_blank"
+                class="btn btn-light d-block d-flex align-items-center justify-content-center"
+                ><i
+                  class="fa-brands fa-whatsapp"
+                  style="color: #3bb332; font-size: 25px; font-weight: 500"
+                ></i
+                >&nbsp; Ajukan Adopsi</a
               >
               <a
                 href="adopsi-kucing.html"
-                class="btn btn-light d-block my-2 fw-semibold"
-                ><i class="fa-solid fa-angle-left"></i> Kembali</a
+                class="btn btn-light d-block my-2 d-flex align-items-center justify-content-center"
+                ><i class="fa-solid fa-angle-left"></i>&nbsp;Kembali</a
               >
 
-              <p class="report">
-                <a href="#!">Laporkan</a>
+              <p class="report opacity-50">
+                <button
+                  type="button"
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModal"
+                  data-bs-whatever="@getbootstrap"
+                >
+                  Laporkan
+                </button>
               </p>
+
+              <!-- Modal Report -->
+              <div
+                class="modal fade"
+                id="exampleModal"
+                tabindex="-1"
+                aria-labelledby="exampleModalLabel"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog modal-dialog-centered">
+                  <div class="modal-content">
+                    <div class="modal-body">
+                      <form>
+                        <div class="mb-3">
+                          <label
+                            for="message-text"
+                            class="col-form-label fs-4 fw-semibold"
+                            >Alasan:</label
+                          >
+                          <textarea
+                            class="form-control"
+                            id="message-text"
+                            placeholder="Berikan alasan mengapa postingan ini harus dilaporkan"
+                          ></textarea>
+                        </div>
+                      </form>
+                    </div>
+                    <div class="modal-footer">
+                      <button
+                        type="button"
+                        class="btn kembali"
+                        data-bs-dismiss="modal"
+                      >
+                        Kembali
+                      </button>
+                      <button type="button" class="btn kirim">Kirim</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -337,39 +400,41 @@
             <div class="cats-row row row-cols-1 row-cols-md-4 g-5">
               <!-- Cat -->
               <div class="col">
-                <a href="detail.kucing.html">
+                <a href="detail-kucing.html">
                   <div class="card h-200">
                     <img
-                      src="./assets/mengoyen.png"
+                      src="./assets/blackie.png"
                       class="card-img-top"
                       alt="kucing"
                     />
+                    <!-- Body -->
                     <div class="card-body">
-                      <h2 class="card-title fw-bold">Mengoyen</h2>
+                      <h2 class="card-title fw-bold">Blackie</h2>
                       <hr />
-                      <p class="card-text fw-semibold opacity-75">
-                        Mengoyen tinggal di parkiran. Dibuang diparkiran dan
-                        terkena flu parah. Awalnya ......
+                      <p class="card-text opacity-75">
+                        Blackie adalah kitten remaja betina di Menteng. Blackie
+                        sudah disteril dan ......
                       </p>
                     </div>
+                    <!-- Footer -->
                     <div class="card-footer">
                       <div class="row">
                         <div class="col-4">
                           <img
                             class="img-fluid rounded-5"
-                            src="./assets/mengoyen.png"
+                            src="https://i.pravatar.cc/300?img=6"
                             alt=""
                           />
                         </div>
                         <div class="col-8">
                           <div class="user-acc">
                             <p class="fw-bold">
-                              Abdul Rozak <br />
+                              Taufik Hidayat<br />
                               <small class="text-body-secondary fw-normal"
                                 ><i
                                   class="fa-solid fa-location-dot text-danger"
                                 ></i>
-                                Jakarta Utara</small
+                                Bekasi</small
                               >
                             </p>
                           </div>
@@ -391,7 +456,7 @@
                     <div class="card-body">
                       <h2 class="card-title fw-bold">Clara</h2>
                       <hr />
-                      <p class="card-text fw-semibold opacity-75">
+                      <p class="card-text opacity-75">
                         Clara adalah salah satu kucing betina yang ditangkap di
                         awal April dari Menteng dan ......
                       </p>
@@ -401,19 +466,19 @@
                         <div class="col-4">
                           <img
                             class="img-fluid rounded-5"
-                            src="./assets/mengoyen.png"
+                            src="https://i.pravatar.cc/300?img=3"
                             alt=""
                           />
                         </div>
                         <div class="col-8">
                           <div class="user-acc">
                             <p class="fw-bold">
-                              Abdul Rozak <br />
+                              Sultan <br />
                               <small class="text-body-secondary fw-normal"
                                 ><i
                                   class="fa-solid fa-location-dot text-danger"
                                 ></i>
-                                Jakarta Utara</small
+                                Depok</small
                               >
                             </p>
                           </div>
@@ -435,7 +500,7 @@
                     <div class="card-body">
                       <h2 class="card-title fw-bold">Riki</h2>
                       <hr />
-                      <p class="card-text fw-semibold opacity-75">
+                      <p class="card-text opacity-75">
                         Riki sudah steril, agak penakut dan galak dengan kucing
                         lain, tapi sebenarnya sangat ......
                       </p>
@@ -445,19 +510,19 @@
                         <div class="col-4">
                           <img
                             class="img-fluid rounded-5"
-                            src="./assets/mengoyen.png"
+                            src="https://i.pravatar.cc/300?img=4"
                             alt=""
                           />
                         </div>
                         <div class="col-8">
                           <div class="user-acc">
                             <p class="fw-bold">
-                              Abdul Rozak <br />
+                              Rozali<br />
                               <small class="text-body-secondary fw-normal"
                                 ><i
                                   class="fa-solid fa-location-dot text-danger"
                                 ></i>
-                                Jakarta Utara</small
+                                Bogor</small
                               >
                             </p>
                           </div>
@@ -479,9 +544,9 @@
                     <div class="card-body">
                       <h2 class="card-title fw-bold">Mamo</h2>
                       <hr />
-                      <p class="card-text fw-semibold opacity-75">
-                        Riki sudah steril, agak penakut dan galak dengan kucing
-                        lain, tapi sebenarnya sangat ......
+                      <p class="card-text opacity-75">
+                        Mamo sudah disteril. Mamo badannya besar, tapi wajahnya
+                        imut menggemaskan. Mamo ......
                       </p>
                     </div>
                     <div class="card-footer">
@@ -489,19 +554,19 @@
                         <div class="col-4">
                           <img
                             class="img-fluid rounded-5"
-                            src="./assets/mengoyen.png"
+                            src="https://i.pravatar.cc/300?img=7"
                             alt=""
                           />
                         </div>
                         <div class="col-8">
                           <div class="user-acc">
                             <p class="fw-bold">
-                              Abdul Rozak <br />
+                              Rahmat Agus<br />
                               <small class="text-body-secondary fw-normal"
                                 ><i
                                   class="fa-solid fa-location-dot text-danger"
                                 ></i>
-                                Jakarta Utara</small
+                                Bekasi</small
                               >
                             </p>
                           </div>

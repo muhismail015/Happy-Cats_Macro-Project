@@ -143,7 +143,23 @@ hr {
 
 .card-footer {
   background-color: #ffd8a9 !important;
-  padding: 1rem 0 00 !important;
+  padding: 1rem 0 0 0 !important;
+}
+
+#detail-kucing .card-footer-detail {
+  background-color: #ffd8a9 !important;
+  padding: 0.8rem 2rem !important;
+  border-radius: 15px;
+}
+
+/* .card-footer-detail .nama-user {
+  font-size: 21px;
+} */
+
+.card-footer-detail img {
+  height: 3.5rem;
+  border: 1px solid rgb(86, 86, 86);
+  box-shadow: 2px 2px 12px rgba(42, 42, 42, 0.4);
 }
 
 .card-footer img {
@@ -206,7 +222,7 @@ hr {
 }
 
 .tes.sticky-top {
-  top: 8rem;
+  top: 6rem;
   z-index: 1;
 }
 
@@ -248,13 +264,14 @@ hr {
 } */
 
 #detail-kucing .judul h1 {
-  color: #212020;
+  color: #505050;
   font-size: 3rem;
   margin-top: -1rem;
 }
 
 #detail-kucing .data-info p {
   margin: -0.8rem 0;
+  color: #505050;
 }
 
 .data-info #more {
@@ -271,6 +288,10 @@ hr {
 .info-2 table td {
   border: none;
   padding: 0;
+}
+
+.info-2 .table tr td {
+  color: #505050;
 }
 
 .data-info .card-footer {
@@ -293,7 +314,7 @@ hr {
 }
 
 .user-acc .nama-user {
-  font-size: 20px !important;
+  font-size: 21px;
 }
 
 .user-acc .lokasi {
@@ -304,8 +325,22 @@ hr {
 .card-footer .detail-user {
   margin-top: 0.5rem !important;
 }
+
+#detail-kucing .detail-user {
+  font-size: 14px;
+}
+
+#detail-kucing .card-body {
+  padding: 1rem 1.5rem;
+}
+
+#detail-kucing .card-footer {
+  padding: 1rem 0 0 0 !important;
+}
+
 .adopsi-card h3 {
-  font-size: 23px;
+  font-size: 20px;
+  font-weight: 600;
 }
 
 .adopsi-card {
@@ -319,16 +354,28 @@ hr {
   padding-top: 0.5rem;
   margin-bottom: -0.5rem;
 }
-.report a {
+
+.report button {
   color: #505050;
+  background-color: transparent;
+}
+
+#detail-kucing .kirim {
+  background-color: #e38b29;
+  color: #fff;
+}
+
+#detail-kucing .kembali {
+  background-color: #9d9d9d;
+  color: #fff;
 }
 
 .data-info .desc {
-  font-size: 18px;
+  font-size: 16px;
 }
 
 .info-2 table {
-  font-size: 18px;
+  font-size: 16px;
 }
 
 /* .text-start h4 {
