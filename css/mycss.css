@@ -42,6 +42,11 @@ hr {
   background-color: #f1a661;
 }
 
+.search-filter input::placeholder {
+  font-size: 13px;
+  font-style: italic;
+}
+
 .search-filter .kategori,
 .kota {
   margin-left: -1rem;
@@ -75,7 +80,7 @@ hr {
 }
 
 .side-kucing h2 {
-  font-size: 1.8rem;
+  font-size: 1.7rem;
 }
 
 #temukan-kucing .isi-artikel {
@@ -83,7 +88,7 @@ hr {
 }
 
 .isi-artikel p {
-  font-size: 14px;
+  font-size: 12px;
 }
 
 .isi-artikel span {
@@ -93,7 +98,24 @@ hr {
 
 .isi-artikel hr {
   border: 1px solid #000000;
-  margin-bottom: -0.1rem;
+  /* margin-bottom: -0.1rem; */
+}
+
+.side-kucing p {
+  color: #fff;
+  font-weight: 100;
+}
+
+.side-kucing .post a {
+  color: #505050;
+  background-color: #fff;
+  transition: 0.2s;
+}
+
+.side-kucing .post a:hover {
+  background-color: #dedede;
+  transition: 0.2s;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .side-kucing img {
@@ -121,12 +143,12 @@ hr {
 
 .card-footer {
   background-color: #ffd8a9 !important;
-  padding: 0.5rem auto !important;
+  padding: 1rem 0 00 !important;
 }
 
 .card-footer img {
   height: 3rem;
-  border: 2px solid #505050;
+  border: 1px solid rgb(86, 86, 86);
   box-shadow: 2px 2px 12px rgba(42, 42, 42, 0.4);
 }
 
@@ -159,6 +181,14 @@ hr {
 
 .show-kucing .cats-row {
   margin-top: 0.5rem;
+}
+
+.cats-row h2 {
+  color: #3d3d3d;
+}
+
+.cats-row p {
+  color: #505050;
 }
 
 #detail-kucing {
@@ -256,6 +286,10 @@ hr {
 .data-info .card-footer .user-acc {
   margin-left: -2rem;
   margin-top: 1rem;
+}
+
+.user-acc p {
+  color: #3d3d3d;
 }
 
 .user-acc .nama-user {
