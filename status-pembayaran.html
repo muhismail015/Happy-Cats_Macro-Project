@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Pembayaran Donasi | Happy Cats</title>
+    <title>Status Pembayaran | Happy Cats</title>
 
     <link rel="stylesheet" href="css/mycss.css" />
     <link
@@ -49,200 +49,34 @@
     </div>
 
     <!-- Form data donasi -->
-    <section id="pembayaran-donasi">
-      <div class="banner-img">
-        <h1 class="text-center text-light">Pembayaran Donasi</h1>
-      </div>
-
+    <section id="status">
       <div class="container">
-        <div class="breadcrumb">
-          <nav style="--bs-breadcrumb-divider: '>'" aria-label="breadcrumb">
-            <ol class="breadcrumb">
-              <li class="breadcrumb-item"><a href="index.html">Beranda</a></li>
-              <li class="breadcrumb-item"><a href="donasi.html">Donasi</a></li>
-              <li class="breadcrumb-item active" aria-current="page">
-                Pembayaran Donasi
-              </li>
-            </ol>
-          </nav>
-        </div>
-
-        <!-- Donation Card Confirm -->
-        <div class="detail-donatur">
-          <h2 class="fw-bold mb-4">Detail Donatur</h2>
-
-          <form action="status-pembayaran.html" method="post" class="">
-            <div class="row g-3">
-              <div class="col">
-                <div class="mb-3">
-                  <label for="exampleInputEmail1" class="form-label"
-                    >Nama depan<span>*</span></label
-                  >
-                  <input
-                    type="text"
-                    class="form-control"
-                    id="exampleInputEmail1"
-                    placeholder="Masukkan Nama depan Anda"
-                  />
-                </div>
-              </div>
-              <div class="col">
-                <div class="mb-3">
-                  <label for="exampleInputEmail1" class="form-label"
-                    >Nama Belakang<span>*</span></label
-                  >
-                  <input
-                    type="text"
-                    class="form-control"
-                    id="exampleInputEmail1"
-                    placeholder="Masukkan Nama depan Anda"
-                  />
-                </div>
+        <!-- Status -->
+        <div class="status-pembayaran">
+          <div class="row">
+            <div class="col">
+              <div class="img-status d-flex justify-content-end">
+                <img class="" src="./assets/img/thanks-status.svg" alt="" />
               </div>
             </div>
+            <div class="col">
+              <div class="greetings">
+                <i
+                  class="fa-solid fa-circle-check mb-3"
+                  style="color: #4caf50"
+                ></i>
+                <h1>
+                  Terima kasih <br />
+                  Sudah Berdonasi!
+                </h1>
 
-            <div class="row g-3">
-              <div class="col">
-                <div class="mb-3">
-                  <label for="exampleInputEmail1" class="form-label"
-                    >Alamat Email<span>*</span></label
-                  >
-                  <input
-                    type="text"
-                    class="form-control"
-                    id="exampleInputEmail1"
-                    placeholder="contoh: pambudi@gmail.com"
-                  />
-                </div>
-                <div class="mb-3">
-                  <label for="exampleInputEmail1" class="form-label"
-                    >Nomor Telepon/WA<span>*</span></label
-                  >
-                  <input
-                    type="text"
-                    class="form-control"
-                    id="exampleInputEmail1"
-                    placeholder="contoh: 089900112234"
-                  />
-                </div>
-              </div>
-              <div class="col">
-                <div class="mb-3">
-                  <label for="exampleInputEmail1" class="form-label"
-                    >Deskripsi
-                  </label>
-                  <textarea
-                    class="form-control"
-                    placeholder=""
-                    id="floatingTextarea2"
-                    style="height: 130px"
-                  ></textarea>
-                </div>
+                <p>Donasimu sudah</p>
+                <p>berhasil dilakukan</p>
+
+                <a class="btn d-block" href="index.html">Kembali ke Beranda </a>
               </div>
             </div>
-            <div class="row g-3">
-              <div class="col">
-                <div class="mb-3">
-                  <div class="form-check">
-                    <input
-                      class="form-check-input"
-                      type="checkbox"
-                      value=""
-                      id="flexCheckDefault"
-                    />
-                    <label class="form-check-label" for="flexCheckDefault">
-                      Berdonasi sebagai Anonim
-                    </label>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="row">
-              <div class="col text-center">
-                <div class="d-grid gap-1 pt-4">
-                  <button
-                    type="button"
-                    class="btn text-light fw-semibold"
-                    data-bs-toggle="modal"
-                    data-bs-target="#staticBackdrop"
-                  >
-                    Donasi Sekarang
-                  </button>
-
-                  <!-- Modal -->
-                  <div
-                    class="modal fade"
-                    id="staticBackdrop"
-                    data-bs-backdrop="static"
-                    data-bs-keyboard="false"
-                    tabindex="-1"
-                    aria-labelledby="staticBackdropLabel"
-                    aria-hidden="true"
-                  >
-                    <div class="modal-dialog modal-dialog-centered">
-                      <div class="modal-content">
-                        <div class="modal-header">
-                          <h1
-                            class="modal-title fs-5 fw-bold"
-                            id="staticBackdropLabel"
-                          >
-                            Konfirmasi Pembayaran
-                          </h1>
-                          <button
-                            type="button"
-                            class="btn-close"
-                            data-bs-dismiss="modal"
-                            aria-label="Close"
-                          ></button>
-                        </div>
-                        <div class="modal-body text-start">
-                          <div class="total">
-                            <p>
-                              Total <br />
-                              <span class="fw-semibold fs-2">Rp. 50.000</span>
-                            </p>
-                          </div>
-                          <hr />
-                          <p class="fs-5">
-                            Method Payment: <br />
-                            <span class="fw-semibold">GOPAY</span>
-                          </p>
-                          <img
-                            class="mx-auto d-block"
-                            src="./assets/img/example-qr.jpg"
-                            alt=""
-                          />
-                          <!-- <hr> -->
-                        </div>
-                        <div class="btn-foot d-grid gap-1 p-5">
-                          <a class="d-grid gap-1" href="status-pembayaran.html">
-                            <button
-                              type="button"
-                              class="btn btn-primary status"
-                              data-bs-dismiss="modal"
-                            >
-                              Cek Status
-                            </button>
-                          </a>
-                          <button
-                            type="button"
-                            class="btn btn-secondary kembali"
-                            data-bs-dismiss="modal"
-                          >
-                            Kembali
-                          </button>
-                          <!-- <button type="button" class="btn btn-primary">
-                            Understood
-                          </button> -->
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </form>
+          </div>
         </div>
       </div>
 
@@ -449,6 +283,10 @@
       </div>
     </section>
 
+    <script
+      src="https://kit.fontawesome.com/db3e01df23.js"
+      crossorigin="anonymous"
+    ></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"

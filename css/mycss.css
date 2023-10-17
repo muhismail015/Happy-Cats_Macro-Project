@@ -149,6 +149,7 @@ hr {
 #detail-kucing .card-footer-detail {
   background-color: #ffd8a9 !important;
   padding: 0.8rem 2rem !important;
+  box-shadow: 2px 2px 12px rgba(42, 42, 42, 0.3);
   border-radius: 15px;
 }
 
@@ -188,11 +189,13 @@ hr {
 
 .show-kucing .card {
   border: none;
-  box-shadow: 2px 2px 12px rgba(42, 42, 42, 0.2);
+  box-shadow: 2px 2px 12px rgba(42, 42, 42, 0.4);
+  transition: 0.1s;
 }
 
 .show-kucing .card:hover {
-  box-shadow: 2px 2px 12px rgba(42, 42, 42, 0.3);
+  box-shadow: 2px 2px 12px rgba(42, 42, 42, 0.5);
+  transition: 0.1s;
 }
 
 .show-kucing .cats-row {
@@ -336,6 +339,10 @@ hr {
 
 #detail-kucing .card-footer {
   padding: 1rem 0 0 0 !important;
+}
+
+.adopsi-card {
+  box-shadow: 2px 2px 12px rgba(42, 42, 42, 0.3);
 }
 
 .adopsi-card h3 {
@@ -582,6 +589,15 @@ body {
   margin-top: 2rem;
 }
 
+#donasi .program h1 {
+  color: #505050;
+}
+
+#donasi .program p {
+  color: #505050;
+  opacity: 80%;
+}
+
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
   -webkit-appearance: none;
@@ -603,8 +619,16 @@ input[type="number"] {
   border-radius: 15px;
 }
 
+.input-donasi h3 {
+  color: #505050;
+}
+
+.input-donasi label {
+  color: #505050;
+}
+
 .input-donasi.sticky-top {
-  top: 7rem;
+  top: 6rem;
   z-index: 1;
 }
 
@@ -646,8 +670,24 @@ input[type="number"] {
   padding: 30px;
 }
 
+.detail-donatur h2 {
+  color: #505050;
+}
+
 .detail-donatur label {
   font-size: 18px;
+  color: #505050;
+  opacity: 90%;
+}
+
+.detail-donatur input::placeholder {
+  color: #505050;
+  opacity: 60%;
+  font-size: 13px;
+}
+
+.detail-donatur label span {
+  color: red;
 }
 
 .detail-donatur button {
@@ -660,6 +700,20 @@ input[type="number"] {
 
 .btn-foot button {
   padding: 0.7rem !important;
+}
+
+.btn-foot .status {
+  background-color: #e38b29;
+  border: none;
+}
+
+.btn-foot .kembali {
+  background-color: #505050;
+  border: none;
+}
+
+.btn-foot .kembali:hover {
+  background-color: #949494;
 }
 
 .footers {
@@ -971,4 +1025,55 @@ input[type="number"] {
   .main-container {
     width: 98%;
   }
+}
+
+/* #status .container {
+  padding: 0 15rem;
+} */
+
+#status {
+  margin-top: 5rem;
+}
+
+.status-pembayaran {
+  /* background-color: #ffd8a9; */
+  border-radius: 15px;
+  padding: 30px;
+}
+
+.greetings {
+  margin-top: 5rem;
+}
+
+.greetings i {
+  font-size: 4.5rem;
+}
+
+.greetings h1 {
+  color: #4caf50;
+  font-weight: bold;
+}
+
+.greetings p:nth-child(3) {
+  color: #4caf50;
+  font-size: 2rem;
+}
+
+.greetings p:nth-child(4) {
+  color: #4caf50;
+  font-size: 2rem;
+  margin-top: -2rem;
+}
+
+.greetings a:nth-child(5) {
+  background-color: #e38b29;
+  border-radius: 30px;
+  font-size: 1.3rem;
+  color: #fff;
+  font-weight: 500;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.4);
+}
+
+.greetings a:nth-child(5):hover {
+  background-color: #e89d46;
 }
