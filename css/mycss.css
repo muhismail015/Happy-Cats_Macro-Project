@@ -1077,3 +1077,37 @@ input[type="number"] {
 .greetings a:nth-child(5):hover {
   background-color: #e89d46;
 }
+
+#tentang-kami .title-tentang-kami {
+  color: #e89d46;
+  font-size: 70px;
+  font-weight: bold;
+}
+
+#tentang-kami .content-tentang-kami {
+  font-size: 25px;
+  color: #505050;
+  font-weight: normal;
+}
+
+#tentang-kami .program-tentangkami ul li p {
+  margin: auto;
+  font-size: 20px !important;
+  color: #505050;
+}
+
+.visimisi .title {
+  font-weight: bold;
+  font-size: 70px;
+  color: #e38b29;
+}
+
+.visimisi .card {
+  padding: 3rem !important;
+  border: none;
+}
+
+.visimisi .title-visi {
+  font-size: 50px;
+  text-align: center;
+}
