@@ -1111,3 +1111,24 @@ input[type="number"] {
   font-size: 50px;
   text-align: center;
 }
+
+#edukasi {
+  margin-top: 8rem;
+}
+
+.spynavbar .nav-pills {
+  --bs-nav-pills-link-active-bg: #f1a661;
+  --bs-nav-pills-link-active-color: #fff;
+  --bs-nav-link-color: rgb(108, 117, 125);
+  --bs-nav-link-hover-color: black;
+}
+
+.spynavbar {
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+  border-radius: 15px;
+  padding: 1rem;
+}
+
+#edukasi .isi {
+  margin-left: 1rem;
+}
