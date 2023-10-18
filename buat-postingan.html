@@ -17,7 +17,7 @@
     <script src="https://unpkg.com/feather-icons"></script>
 
     <!-- my style -->
-    <link rel="stylesheet" href="css/registrasi.css" />
+    <link rel="stylesheet" href="css/mycss.css" />
 
     <!-- Icons -->
     <link
@@ -45,18 +45,28 @@
         <a href="donasi.html" style="--i: 2">Donasi</a>
         <a href="edukasi.html" style="--i: 3">Edukasi</a>
         <a href="tentang-kami.html" style="--i: 4">Tentang Kami</a>
-        <a href="" style="--i: 5"><button class="btn-nav">Login</button></a>
+        <a href=""></a>
+        <button
+          class="btn-nav"
+          data-bs-target="#exampleModalToggle"
+          data-bs-toggle="modal"
+        >
+          Login
+        </button>
       </nav>
     </div>
 
     <!-- SECTION REGISTRASI START -->
     <section id="registrasi">
-      <p class="judul">
-        Form Registrasi <br /><br />
-        Postingan Adopsi Kucing
-      </p>
+      <div class="judul">
+        <p>
+          Form Registrasi <br /><br />
+          Postingan Adopsi Kucing
+        </p>
+      </div>
+
       <div class="tes row">
-        <div class="column" style="background-color: none">
+        <div class="column">
           <form action="">
             <label for="name">Nama Kucing</label>
             <input
@@ -89,24 +99,16 @@
             </fieldset>
             <label for="upload">Unggah Gambar</label>
             <input type="file" name="unggahgambar" id="unggah" />
-            <label for="desc">Deskripsi Kucing</label>
-            <input
-              type="text"
-              name="desc"
-              id="desc"
-              placeholder="Masukkan deskripsi kucing"
-            />
+            <h6
+              class="fw-normal opacity-50 fst-italic"
+              style="margin-top: -0.5rem !important; font-size: 14px"
+            >
+              *Maksimal 5 gambar
+            </h6>
           </form>
         </div>
-        <div class="column" style="background-color: none">
+        <div class="column">
           <form action="">
-            <label for="shelter">Nama Tempat Penampungan</label>
-            <input
-              type="text"
-              name="shelter"
-              id="shelter"
-              placeholder="Masukkan nama tempat"
-            />
             <label for="owner">Nama Pemilik</label>
             <input
               type="text"
@@ -128,8 +130,17 @@
               id="address"
               placeholder="Masukkan alamat"
             />
-            <input type="submit" value="Simpan" />
+            <label for="desc">Deskripsi Kucing</label>
+            <textarea
+              class="form-control"
+              placeholder="Deskripsi tentang kucing"
+              id="floatingTextarea2"
+              style="height: 110px"
+            ></textarea>
           </form>
+        </div>
+        <div class="submit text-center">
+          <a class="btn" href="adopsi-kucing.html">Posting Sekarang</a>
         </div>
       </div>
     </section>
@@ -190,7 +201,7 @@
             <li><a href="donasi.html">Donasi</a></li>
             <li><a href="edukasi.html">Edukasi</a></li>
             <li><a href="tentang-kami.html">Tentang Kami</a></li>
-            <li><a href="tentang-kami.html">Buat Postingan</a></li>
+            <li><a href="buat-postingan.html">Buat Postingan</a></li>
           </ul>
         </div>
       </div>
@@ -199,6 +210,143 @@
         <h5>Copyright 2023 &copy; Happy Cats, All right Reserved</h5>
       </div>
     </div>
+
+    <!-- Modal -->
+    <section id="modal-euy">
+      <!-- Login -->
+      <div
+        class="modal fade"
+        id="exampleModalToggle"
+        aria-hidden="true"
+        aria-labelledby="exampleModalToggleLabel"
+        tabindex="-1"
+      >
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-body">
+              <div class="main-container">
+                <div class="grid-login">
+                  <div class="login-left">
+                    <img src="./assets/img/logo.png" alt="" />
+                  </div>
+                  <div class="login-right">
+                    <form class="contact-form" action="#!">
+                      <h4 class="fs-1 fw-bold">Log In Now</h4>
+                      <div>
+                        <label for="username">Username</label>
+                        <input
+                          type="text"
+                          placeholder="Enter your username"
+                          name="username"
+                        />
+                      </div>
+                      <div>
+                        <label for="password">Password</label>
+                        <input
+                          type="password"
+                          placeholder="Enter your password"
+                          name="password"
+                        />
+                      </div>
+                      <div>
+                        <button class="btn-submit">Login</button>
+                      </div>
+
+                      <p class="fs-5 fw-semibold text-center text-dark">
+                        Belum punya akun?<br />
+                        <button
+                          class="regis fs-6"
+                          data-bs-target="#exampleModalToggle2"
+                          data-bs-toggle="modal"
+                          type="button"
+                        >
+                          Buat akun sekarang
+                        </button>
+                      </p>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Register -->
+      <div
+        class="modal fade"
+        id="exampleModalToggle2"
+        aria-hidden="true"
+        aria-labelledby="exampleModalToggleLabel2"
+        tabindex="-1"
+      >
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-body">
+              <div class="registrasi-modal">
+                <form action="#!">
+                  <h2 class="fs-1 fw-bold">Buat Akun</h2>
+                  <div>
+                    <label for="username">Username</label>
+                    <input
+                      type="text"
+                      placeholder="Enter your username"
+                      name="username"
+                    />
+                  </div>
+                  <div>
+                    <label for="name">Name</label>
+                    <input
+                      type="text"
+                      placeholder="Enter your name"
+                      name="name"
+                    />
+                  </div>
+                  <div>
+                    <label for="email">Email Address</label>
+                    <input
+                      type="email"
+                      placeholder="Enter your email"
+                      name="email"
+                    />
+                  </div>
+                  <div>
+                    <label for="password">Password</label>
+                    <input
+                      type="password"
+                      placeholder="Enter your password"
+                      name="password"
+                    />
+                  </div>
+                  <div>
+                    <label for="confpassword">Confirm Password</label>
+                    <input
+                      type="password"
+                      placeholder="Confirm your password"
+                      name="confpassword"
+                    />
+                  </div>
+                  <div>
+                    <button class="btn-submit">Daftar</button>
+                  </div>
+                  <p class="fs-5 fw-semibold text-center text-dark">
+                    Sudah punya akun?<br />
+                    <button
+                      class="login text-primary"
+                      data-bs-target="#exampleModalToggle"
+                      data-bs-toggle="modal"
+                      type="button"
+                    >
+                      Login
+                    </button>
+                  </p>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <!-- Mengimpor Bootstrap JavaScript -->
     <script

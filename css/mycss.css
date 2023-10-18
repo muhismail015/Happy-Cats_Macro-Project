@@ -403,7 +403,7 @@ hr {
 body {
   /* font-family: "Poppins", sans-serif; */
   background-color: var(--primary);
-  color: var(--primary);
+  color: var(--primary-text);
   font-family: "Poppins", sans-serif;
 }
 
@@ -740,6 +740,7 @@ input[type="number"] {
 .footer-logo img {
   width: 250px;
   height: auto;
+  margin-top: 20%;
 }
 
 .footers h3 {
@@ -1131,4 +1132,116 @@ input[type="number"] {
 
 #edukasi .isi {
   margin-left: 1rem;
+}
+
+#registrasi {
+  background-color: #ffd8a9;
+  padding-top: 3rem;
+  /* padding: 5rem; */
+  width: 1042px;
+  height: 745px;
+  margin: 100px auto;
+  background-color: var(--main-color);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+  border-radius: 40px;
+  margin-top: 10rem;
+}
+
+#registrasi p {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: bold;
+  color: #eaae6e;
+  font-size: 50px;
+  line-height: 20px;
+  text-align: center;
+  margin-bottom: 35px;
+}
+
+#registrasi .row {
+  display: flex;
+  justify-content: center;
+  width: none !important;
+  margin: 30px;
+  padding: 20px;
+  background-color: var(--main-color);
+}
+
+#registrasi .column {
+  width: 353px;
+  height: 528px;
+  /* box-shadow: 2px 12px 18px rgba(0, 0, 0, 0.2); */
+  align-items: center;
+  /* justify-content: center; */
+  display: flex;
+  flex-direction: column;
+  margin: 0px 40px;
+}
+
+#registrasi input[type="text"],
+#registrasi textarea {
+  color: #0000006b;
+  font-size: 18px;
+  width: 353px;
+  height: 39px;
+  padding: 12px;
+  border-radius: 20px;
+  box-sizing: border-box;
+  box-shadow: 0 4px 0 rgba(0, 0, 0, 0.2);
+  margin-top: 2px;
+  margin-bottom: 10px;
+  resize: vertical;
+}
+
+#registrasi input[type="submit"] {
+  height: 44px;
+  width: 210px;
+  margin-top: 20px;
+  margin-left: 4.5rem;
+  font-size: 20px;
+  background-color: #e38b29;
+  color: #fff;
+  border-radius: 40px;
+  box-shadow: 0 7px 6px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+}
+
+#registrasi input[type="text"][value="Felicia"],
+#registrasi input[type="text"][value="feliciaa01"],
+#registrasi input[type="text"][value="flciaangel@gmail.com"] {
+  padding-left: 1rem;
+}
+
+#registrasi input[type="submit"]:hover {
+  background-color: #d39956;
+}
+
+#registrasi label,
+#registrasi legend {
+  font-weight: 650px;
+  color: #505050;
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 0;
+}
+
+#registrasi .judul {
+}
+
+#registrasi input,
+#registrasi fieldset {
+  margin-bottom: 1rem !important;
+}
+
+#registrasi a {
+  background-color: #e38b29;
+  color: #fff;
+  font-weight: 500;
+  padding: 0.5rem 2rem;
+  margin-top: -5rem;
+  transition: 0.1s;
+}
+
+#registrasi a:hover {
+  background-color: #e59a44;
+  transition: 0.1s;
 }

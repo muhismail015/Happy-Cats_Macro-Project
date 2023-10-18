@@ -135,7 +135,10 @@
                     <div class="sortby">
                       <a
                         class="text-center align-self-center text-light fs-4"
-                        href="#"
+                        href="!#"
+                        data-bs-toggle="tooltip"
+                        data-bs-placement="top"
+                        data-bs-title="Baru > Lama"
                       >
                         <i class="fa-solid fa-arrow-down-wide-short"></i>
                       </a>
@@ -480,7 +483,7 @@
                   </div>
                 </div>
                 <!-- Artikel -->
-                <div class="side-kucing mt-3 rounded-3 p-4">
+                <!-- <div class="side-kucing mt-3 rounded-3 p-4">
                   <h2 class="text-light fw-semibold">Artikel :</h2>
                   <hr />
                   <a href="#!">
@@ -490,8 +493,6 @@
                           <p class="fw-semibold text-dark">
                             Bagaimana cara merawat kucing ...
                           </p>
-                          <!-- <hr />
-                          <span>03/10/2023 - 21.00 WIB</span> -->
                         </div>
                         <div class="col-5">
                           <img
@@ -510,8 +511,6 @@
                           <p class="fw-semibold text-dark">
                             Pentingnya sterilisasi bagi kucing ...
                           </p>
-                          <!-- <hr />
-                          <span>03/10/2023 - 21.00 WIB</span> -->
                         </div>
                         <div class="col-5">
                           <img class="img-fluid" src="assets/boy.png" alt="" />
@@ -526,8 +525,6 @@
                           <p class="fw-semibold text-dark">
                             Mengurangi kucing terlantar ...
                           </p>
-                          <!-- <hr />
-                          <span>03/10/2023 - 21.00 WIB</span> -->
                         </div>
                         <div class="col-5">
                           <img class="img-fluid" src="assets/mamo.png" alt="" />
@@ -541,7 +538,7 @@
                       <i class="fa-solid fa-angles-right"></i
                     ></a>
                   </div>
-                </div>
+                </div> -->
               </div>
             </div>
           </div>
@@ -603,7 +600,7 @@
               <li><a href="donasi.html">Donasi</a></li>
               <li><a href="edukasi.html">Edukasi</a></li>
               <li><a href="tentang-kami.html">Tentang Kami</a></li>
-              <li><a href="tentang-kami.html">Buat Postingan</a></li>
+              <li><a href="buat-postingan.html">Buat Postingan</a></li>
             </ul>
           </div>
         </div>
@@ -760,5 +757,13 @@
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
       crossorigin="anonymous"
     ></script>
+    <script>
+      const tooltipTriggerList = document.querySelectorAll(
+        '[data-bs-toggle="tooltip"]'
+      );
+      const tooltipList = [...tooltipTriggerList].map(
+        (tooltipTriggerEl) => new bootstrap.Tooltip(tooltipTriggerEl)
+      );
+    </script>
   </body>
 </html>
