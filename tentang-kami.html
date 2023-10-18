@@ -247,6 +247,168 @@
       </div>
     </div>
 
+    <!-- Modal -->
+    <section id="modal-euy">
+      <!-- Login -->
+      <div
+        class="modal fade"
+        id="exampleModalToggle"
+        aria-hidden="true"
+        aria-labelledby="exampleModalToggleLabel"
+        tabindex="-1"
+      >
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-body">
+              <div class="main-container">
+                <div class="close-manual">
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="grid-login">
+                  <div class="login-left text-center">
+                    <img src="/assets/img/logo.png" alt="" />
+                  </div>
+                  <div class="login-right">
+                    <div class="boorder shadow">
+                      <form action="#!">
+                        <h4 class="fw-bold pb-3">Login</h4>
+                        <div class="form-floating mb-3 mt-5">
+                          <input
+                            type="text"
+                            class="form-control"
+                            id="floatingInput"
+                            placeholder=""
+                          />
+                          <label for="floatingInput">Username</label>
+                        </div>
+                        <div class="form-floating">
+                          <input
+                            type="password"
+                            class="form-control"
+                            id="floatingPassword"
+                            placeholder="Password"
+                          />
+                          <label for="floatingPassword">Kata sandi</label>
+                        </div>
+                        <div class="text-center mt-3">
+                          <button class="btn-submit">Masuk</button>
+                        </div>
+
+                        <div class="under-form text-center">
+                          <hr />
+                          <p>Belum punya akun?</p>
+                          <div class="regis">
+                            <button
+                              data-bs-target="#exampleModalToggle2"
+                              data-bs-toggle="modal"
+                              type="button"
+                            >
+                              Buat akun
+                            </button>
+                          </div>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Register -->
+      <div
+        class="modal fade"
+        id="exampleModalToggle2"
+        aria-hidden="true"
+        aria-labelledby="exampleModalToggleLabel2"
+        tabindex="-1"
+      >
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-body">
+              <div class="regis-close-manual">
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="registrasi-modal">
+                <form action="#!">
+                  <h2 class="fs-1 fw-bold mb-4">Buat Akun</h2>
+                  <div>
+                    <label for="username">Username</label>
+                    <input
+                      type="text"
+                      placeholder="Masukkan username"
+                      name="username"
+                    />
+                  </div>
+                  <div>
+                    <label for="name">Nama</label>
+                    <input
+                      type="text"
+                      placeholder="Masukkan nama"
+                      name="name"
+                    />
+                  </div>
+                  <div>
+                    <label for="email">Email</label>
+                    <input
+                      type="email"
+                      placeholder="Masukkan alamat email"
+                      name="email"
+                    />
+                  </div>
+                  <div>
+                    <label for="password">Kata sandi</label>
+                    <input
+                      type="password"
+                      placeholder="Masukkan kata sandi"
+                      name="password"
+                    />
+                  </div>
+                  <div>
+                    <label for="confpassword">Konfirmasi kata sandi</label>
+                    <input
+                      type="password"
+                      placeholder="konfirmasi kata sandi"
+                      name="confpassword"
+                    />
+                  </div>
+                  <div class="text-center mt-3">
+                    <button class="btn-submit">Daftar</button>
+                  </div>
+
+                  <div class="under-form text-center">
+                    <hr />
+                    <p>Sudah punya akun?</p>
+                    <div class="regis">
+                      <button
+                        data-bs-target="#exampleModalToggle"
+                        data-bs-toggle="modal"
+                        type="button"
+                      >
+                        Login
+                      </button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <script
       src="https://kit.fontawesome.com/db3e01df23.js"
       crossorigin="anonymous"

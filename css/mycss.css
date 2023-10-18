@@ -596,6 +596,7 @@ body {
 #donasi .program p {
   color: #505050;
   opacity: 80%;
+  text-align: justify;
 }
 
 input::-webkit-outer-spin-button,
@@ -859,8 +860,7 @@ input[type="number"] {
   margin-left: 50px;
 }
 .login-left img {
-  width: 100%;
-  height: 40%;
+  width: 90%;
 }
 
 /* Form */
@@ -869,52 +869,56 @@ input[type="number"] {
   align-items: center;
   justify-content: center;
 }
+
+.login-right .boorder {
+  padding: 3.5rem 7.5rem;
+  background-color: #ffe7cb;
+  border: 1px solid #50505020;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2) !important;
+  border-radius: 30px;
+}
+
+.login-right form .form-floating {
+  margin: 1rem -5rem !important;
+}
+
 .login-right form h4 {
-  font-size: 1.9rem;
+  font-size: 50px;
   margin: 15px 0;
   color: #e38b29;
   text-align: center;
   margin-bottom: 20px;
 }
 
-.login-right label {
-  display: inline-block;
-  font-size: 16px;
-  font-weight: 600px;
-  padding: 5px;
-  margin-bottom: 5px;
+.modal-body .under-form p {
+  font-size: 15px;
+  font-weight: 500;
+  color: #505050;
 }
 
-.login-right input {
-  display: grid;
-  width: 250px;
-  margin: 5px;
-  border: none;
-  outline: none;
-  border-radius: 20px;
-  padding: 5px;
-  border: 1px solid grey;
-  box-shadow: 4px 2px 4px gray;
-  margin-bottom: 10px;
+.close-manual {
+  position: absolute;
+  left: 100%;
+  transform: translate(-8rem, 5rem);
+}
+
+.regis-close-manual {
+  position: absolute;
+  left: 100%;
+  transform: translate(-5rem, 2rem);
 }
 
 /* Button */
 .login-right .btn-submit {
-  width: 150px;
-  margin-left: 50px;
-  border-radius: 20px;
-  border: none;
-  outline: none;
   background-color: #e38b29;
-  box-shadow: 4px 4px 10px #505050;
-  margin: 10px;
-  height: 30px;
-  font-weight: bold;
+  box-shadow: 4px 4px 10px #50505040;
+  padding: 0.3rem 3rem;
+  border-radius: 10px;
+  font-weight: 500;
   color: white;
   cursor: pointer;
-  margin-left: 50px;
-  margin-top: 20px;
 }
+
 .login-right button.btn-submit:hover {
   background-color: #e89d46;
   transition: 0.1s;
@@ -933,18 +937,40 @@ input[type="number"] {
   background-color: #e38b29;
 }
 
-.login-right .regis {
+.login-right .regis button {
   background-color: transparent !important;
-  color: red;
-  font-size: 18px !important;
+  font-size: 15px;
+  font-weight: 500;
+  color: #db2a2a;
+}
+
+.registrasi-modal .regis button {
+  background-color: transparent !important;
+  font-size: 15px;
+  font-weight: 500;
+  color: #2a8bdb;
+}
+
+.login-right .regis {
+  margin-top: -1rem;
+}
+
+.registrasi-modal .regis {
+  margin-top: -1rem;
 }
 
 .login-right .btn-submit:hover {
   color: rgb(192, 181, 181) !important;
 }
 
-.login-right .regis:hover {
+.login-right .regis button:hover {
   color: rgb(255, 106, 106);
+  text-decoration: underline !important;
+}
+
+.registrasi-modal .regis button:hover {
+  color: #4b9bdd;
+  text-decoration: underline !important;
 }
 
 .registrasi-modal form {
@@ -954,8 +980,8 @@ input[type="number"] {
   justify-content: center;
   background-color: #fdeedc;
   box-shadow: 0 6px 10px;
-  border-radius: 20px;
-  width: 400px;
+  border-radius: 30px;
+  /* width: 400px; */
   height: 700px;
   /* margin-top: 50px; */
 }
@@ -1117,6 +1143,17 @@ input[type="number"] {
   margin-top: 8rem;
 }
 
+#edukasi li a {
+  color: #000;
+  font-size: 20px;
+}
+
+#edukasi li {
+  color: #00000050;
+  font-size: 20px;
+  margin-top: 2rem;
+}
+
 .spynavbar .nav-pills {
   --bs-nav-pills-link-active-bg: #f1a661;
   --bs-nav-pills-link-active-color: #fff;
@@ -1125,13 +1162,34 @@ input[type="number"] {
 }
 
 .spynavbar {
-  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
   border-radius: 15px;
   padding: 1rem;
+  /* background-color: #ffd8a9; */
 }
 
-#edukasi .isi {
-  margin-left: 1rem;
+#edukasi .isi p {
+  font-size: 20px;
+  margin: 1.5rem 0;
+  opacity: 80%;
+  color: #505050;
+}
+
+#edukasi .isi span {
+  font-size: 1.7rem !important;
+  text-decoration: underline !important;
+  text-decoration-color: #50505050 !important ;
+  text-decoration-style: wavy !important;
+}
+
+#edukasi .judul h1 {
+  font-weight: 900;
+  font-size: 50px;
+  color: #505050;
+}
+
+#edukasi .content {
+  margin-right: 2rem;
+  text-align: justify;
 }
 
 #registrasi {
@@ -1250,6 +1308,7 @@ input[type="number"] {
   padding: 0.5rem 2rem;
   margin-top: -5rem;
   transition: 0.1s;
+  font-size: 18px;
 }
 
 #registrasi a:hover {

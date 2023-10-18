@@ -661,45 +661,59 @@
           <div class="modal-content">
             <div class="modal-body">
               <div class="main-container">
+                <div class="close-manual">
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                </div>
                 <div class="grid-login">
-                  <div class="login-left">
-                    <img src="./assets/img/logo.png" alt="" />
+                  <div class="login-left text-center">
+                    <img src="/assets/img/logo.png" alt="" />
                   </div>
                   <div class="login-right">
-                    <form class="contact-form" action="#!">
-                      <h4 class="fs-1 fw-bold">Log In Now</h4>
-                      <div>
-                        <label for="username">Username</label>
-                        <input
-                          type="text"
-                          placeholder="Enter your username"
-                          name="username"
-                        />
-                      </div>
-                      <div>
-                        <label for="password">Password</label>
-                        <input
-                          type="password"
-                          placeholder="Enter your password"
-                          name="password"
-                        />
-                      </div>
-                      <div>
-                        <button class="btn-submit">Login</button>
-                      </div>
+                    <div class="boorder shadow">
+                      <form action="#!">
+                        <h4 class="fw-bold pb-3">Login</h4>
+                        <div class="form-floating mb-3 mt-5">
+                          <input
+                            type="text"
+                            class="form-control"
+                            id="floatingInput"
+                            placeholder=""
+                          />
+                          <label for="floatingInput">Username</label>
+                        </div>
+                        <div class="form-floating">
+                          <input
+                            type="password"
+                            class="form-control"
+                            id="floatingPassword"
+                            placeholder="Password"
+                          />
+                          <label for="floatingPassword">Kata sandi</label>
+                        </div>
+                        <div class="text-center mt-3">
+                          <button class="btn-submit">Masuk</button>
+                        </div>
 
-                      <p class="fs-5 fw-semibold text-center text-dark">
-                        Belum punya akun?<br />
-                        <button
-                          class="regis fs-6"
-                          data-bs-target="#exampleModalToggle2"
-                          data-bs-toggle="modal"
-                          type="button"
-                        >
-                          Buat akun sekarang
-                        </button>
-                      </p>
-                    </form>
+                        <div class="under-form text-center">
+                          <hr />
+                          <p>Belum punya akun?</p>
+                          <div class="regis">
+                            <button
+                              data-bs-target="#exampleModalToggle2"
+                              data-bs-toggle="modal"
+                              type="button"
+                            >
+                              Buat akun
+                            </button>
+                          </div>
+                        </div>
+                      </form>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -719,63 +733,74 @@
         <div class="modal-dialog modal-dialog-centered">
           <div class="modal-content">
             <div class="modal-body">
+              <div class="regis-close-manual">
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
               <div class="registrasi-modal">
                 <form action="#!">
-                  <h2 class="fs-1 fw-bold">Buat Akun</h2>
+                  <h2 class="fs-1 fw-bold mb-4">Buat Akun</h2>
                   <div>
                     <label for="username">Username</label>
                     <input
                       type="text"
-                      placeholder="Enter your username"
+                      placeholder="Masukkan username"
                       name="username"
                     />
                   </div>
                   <div>
-                    <label for="name">Name</label>
+                    <label for="name">Nama</label>
                     <input
                       type="text"
-                      placeholder="Enter your name"
+                      placeholder="Masukkan nama"
                       name="name"
                     />
                   </div>
                   <div>
-                    <label for="email">Email Address</label>
+                    <label for="email">Email</label>
                     <input
                       type="email"
-                      placeholder="Enter your email"
+                      placeholder="Masukkan alamat email"
                       name="email"
                     />
                   </div>
                   <div>
-                    <label for="password">Password</label>
+                    <label for="password">Kata sandi</label>
                     <input
                       type="password"
-                      placeholder="Enter your password"
+                      placeholder="Masukkan kata sandi"
                       name="password"
                     />
                   </div>
                   <div>
-                    <label for="confpassword">Confirm Password</label>
+                    <label for="confpassword">Konfirmasi kata sandi</label>
                     <input
                       type="password"
-                      placeholder="Confirm your password"
+                      placeholder="konfirmasi kata sandi"
                       name="confpassword"
                     />
                   </div>
-                  <div>
+                  <div class="text-center mt-3">
                     <button class="btn-submit">Daftar</button>
                   </div>
-                  <p class="fs-5 fw-semibold text-center text-dark">
-                    Sudah punya akun?<br />
-                    <button
-                      class="login text-primary"
-                      data-bs-target="#exampleModalToggle"
-                      data-bs-toggle="modal"
-                      type="button"
-                    >
-                      Login
-                    </button>
-                  </p>
+
+                  <div class="under-form text-center">
+                    <hr />
+                    <p>Sudah punya akun?</p>
+                    <div class="regis">
+                      <button
+                        data-bs-target="#exampleModalToggle"
+                        data-bs-toggle="modal"
+                        type="button"
+                      >
+                        Login
+                      </button>
+                    </div>
+                  </div>
                 </form>
               </div>
             </div>
