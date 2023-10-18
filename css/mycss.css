@@ -1271,6 +1271,10 @@ input[type="number"] {
   margin-top: 10rem;
 }
 
+#registrasi .tes {
+  margin-top: -1.5rem !important;
+}
+
 #registrasi p {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-weight: bold;
