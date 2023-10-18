@@ -482,6 +482,72 @@ body {
   transition: 0.2s;
 }
 
+/* Profile Dropdown Style  */
+.prof-dropdown {
+  position: relative;
+  width: fit-content;
+}
+
+.prof-dropdown-btn {
+  background-color: var(--second-bgc);
+  color: var(--primary);
+  font-weight: 500;
+}
+
+.prof-img {
+  width: 1.8rem;
+  height: 1.8rem;
+  border-radius: 50%;
+}
+
+.prof-droplist {
+  position: absolute;
+  top: 100%;
+  width: auto;
+  right: 8%;
+  background-color: var(--second-bgc);
+  border-radius: 10px;
+  box-shadow: 1px 1px 10px rgba(1, 1, 3, 0.3);
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s;
+}
+.prof-droplist.active {
+  max-height: 500px;
+}
+
+.prof-droplist-item {
+  padding: 0.5rem 0 0.5rem 1rem;
+  list-style: none;
+}
+
+.prof-droplist-item a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 400;
+  color: var(--primary);
+  margin: -0.8rem 1rem 0.6rem -2rem;
+  /* margin-right: 1rem; */
+}
+
+.prof-droplist-item a i {
+  margin-right: 0.8rem;
+  font-size: 1.1rem;
+  width: 2rem;
+  height: 2rem;
+  background-color: var(--primary);
+  color: var(--bgc);
+  line-height: 2rem;
+  text-align: center;
+  border-radius: 50%;
+}
+.prof-droplist-item a i:hover {
+  background-color: var(--bgc);
+  color: var(--primary);
+}
+
 .burger-menu {
   /* position: absolute;
   right: 5%; */
@@ -1210,7 +1276,7 @@ input[type="number"] {
   font-weight: bold;
   color: #eaae6e;
   font-size: 50px;
-  line-height: 20px;
+  line-height: 30px;
   text-align: center;
   margin-bottom: 35px;
 }
@@ -1314,4 +1380,109 @@ input[type="number"] {
 #registrasi a:hover {
   background-color: #e59a44;
   transition: 0.1s;
+}
+
+/* CARD */
+#my-profile .card {
+  padding: 5rem;
+  width: 1084px;
+  height: 820px;
+  margin: 100px auto;
+  background-color: var(--primary);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+  border-radius: 40px;
+}
+
+#my-profile .card h1 {
+  color: #eaae6e;
+  font-weight: bold;
+}
+
+#my-profile .card .row {
+  display: flex;
+  justify-content: center;
+  margin: 3rem;
+  width: 100%;
+}
+
+#my-profile input[type="text"],
+#my-profile textarea {
+  color: #505050;
+  font-size: 22px;
+  width: 410px;
+  height: 45px;
+  padding: 12px;
+  border-radius: 20px;
+  box-sizing: border-box;
+  box-shadow: 0 4px 0 rgba(0, 0, 0, 0.2);
+  margin-top: 2px;
+  margin-bottom: 10px;
+  resize: vertical;
+}
+
+#my-profile textarea {
+  height: auto; /* Memungkinkan textarea untuk berkembang sesuai kontennya */
+  padding-left: 1.5rem;
+}
+
+#my-profile input[type="submit"] {
+  height: 42px;
+  width: 258px;
+  margin-top: 10px;
+  margin-left: 5rem;
+  font-size: 20px;
+  background-color: #e38b29;
+  color: #fff;
+  border-radius: 40px;
+  box-shadow: 0 5px 6px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+}
+
+#my-profile input[type="text"][value="Felicia"],
+#my-profile input[type="text"][value="feliciaa01"],
+#my-profile input[type="text"][value="flciaangel@gmail.com"] {
+  padding-left: 1.5rem;
+}
+
+#my-profile input[type="submit"]:hover {
+  background-color: #d39956;
+}
+
+#my-profile label {
+  font-weight: 650px;
+  color: #505050;
+  font-size: 29px;
+  font-weight: 500;
+  margin-bottom: 0;
+}
+
+#my-profile .card-img {
+  width: auto;
+  height: auto;
+  position: absolute;
+  left: 68%;
+  top: 35%;
+  transform: translateX(-70%);
+}
+
+#my-profile .card-img img {
+  border-radius: 100%;
+}
+
+#my-profile .card-img .btn {
+  height: 42px;
+  width: 258px;
+  margin-top: 30px;
+  color: #fff;
+  background-color: #f1a661;
+  font-size: 20px;
+  border-radius: 40px;
+}
+
+#my-profile .card-img .btn:hover {
+  background-color: #faa340;
+}
+
+#my-profile .card-img {
+  margin: 4rem 0 0 5rem;
 }

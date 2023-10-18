@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Buat Postingan</title>
+    <title>Document</title>
 
     <!-- Mengimpor Bootstrap CSS -->
     <link
@@ -18,6 +18,7 @@
 
     <!-- my style -->
     <link rel="stylesheet" href="css/mycss.css" />
+    <!-- <link rel="stylesheet" href="css/profil.css" /> -->
 
     <!-- Icons -->
     <link
@@ -31,7 +32,7 @@
   </head>
 
   <body>
-    <!-- Navbar -->
+    <!-- navbar start -->
     <div class="my-header">
       <a href="home.html" class="my-logo">
         <img src="assets/img/logo.png" alt="Logo" width="80px" />
@@ -45,7 +46,7 @@
 
       <nav class="my-navbar">
         <a href="index.html" style="--i: 0">Beranda</a>
-        <a href="adopsi-kucing.html" style="--i: 1" class="active">Adopsi</a>
+        <a href="adopsi-kucing.html" style="--i: 1">Adopsi</a>
         <a href="donasi.html" style="--i: 2">Donasi</a>
         <a href="edukasi.html" style="--i: 3">Edukasi</a>
         <a href="tentang-kami.html" style="--i: 4">Tentang Kami</a>
@@ -75,97 +76,53 @@
         </a>
       </nav>
     </div>
+    <!-- navbar end -->
 
-    <!-- SECTION REGISTRASI START -->
-    <section id="registrasi">
-      <div class="judul">
-        <p>
-          Form Registrasi <br /><br />
-          Postingan Adopsi Kucing
-        </p>
-      </div>
-
-      <div class="tes row">
-        <div class="column">
-          <form action="adopsi-kucing.html">
-            <label for="name">Nama Kucing</label>
-            <input
-              type="text"
-              required
-              name="name"
-              id="name"
-              placeholder="Masukkan nama kucing"
-            />
-            <label for="age">Usia Kucing</label>
-            <input
-              type="text"
-              name="age"
-              id="age"
-              placeholder="Masukkan usia kucing"
-            />
-            <label for="size">Ukuran Kucing</label>
-            <input
-              type="text"
-              name="size"
-              id="size"
-              placeholder="Masukkan nama kucing"
-            />
-            <fieldset>
-              <legend>Jenis Kelamin kucing:</legend>
-              <select id="jeniskelamin" name="jeniskelamin">
-                <option disabled selected>Pilih Jenis Kelamin</option>
-                <option value="jantan">Jantan</option>
-                <option value="betina">Betina</option>
-              </select>
-            </fieldset>
-            <label for="upload">Unggah Gambar</label>
-            <input type="file" name="unggahgambar" id="unggah" />
-            <h6
-              class="fw-normal opacity-50 fst-italic"
-              style="margin-top: -0.5rem !important; font-size: 14px"
-            >
-              *Maksimal 5 gambar
-            </h6>
-          </form>
-        </div>
-        <div class="column">
+    <!-- SECTION ACCOUNT SETTING START -->
+    <section id="my-profile">
+      <section class="card" style="background-color: #ffd8a9">
+        <h1>Akun saya</h1>
+        <div class="row">
           <form action="">
-            <label for="owner">Nama Pemilik</label>
+            <label for="nama">Nama</label><br />
+            <input type="text" id="nama" name="nama" value="Felicia" /><br />
+            <label for="uname">Username</label><br />
             <input
               type="text"
-              name="owner"
-              id="owner"
-              placeholder="Masukkan nama pemilik"
-            />
-            <label for="size">Nomor Telp/HP</label>
+              id="uname"
+              name="uname"
+              value="feliciaa01"
+            /><br />
+            <label for="email">Email</label><br />
             <input
               type="text"
-              name="size"
-              id="size"
-              placeholder="Masukkan nomor telp/hp"
-            />
-            <label for="address">Alamat</label>
-            <input
-              type="text"
-              name="address"
-              id="address"
-              placeholder="Masukkan alamat"
-            />
-            <label for="desc">Deskripsi Kucing</label>
-            <textarea
-              class="form-control"
-              placeholder="Deskripsi tentang kucing"
-              id="floatingTextarea2"
-              style="height: 110px"
-            ></textarea>
+              id="email"
+              name="email"
+              value="flciaangel@gmail.com"
+            /><br />
+            <label for="alamat">Alamat</label><br />
+            <textarea id="alamat" name="alamat">
+  Jl. Bungur No.23 Cipedes Sukajadi Bandung Barat Jawa Barat 14536</textarea
+            ><br />
+            <input type="submit" value="Simpan" />
           </form>
         </div>
-        <div class="submit text-center">
-          <a class="btn" href="adopsi-kucing.html">Posting Sekarang</a>
-        </div>
+        <!-- <div class="card-img">
+          <img src="assets/user.png" alt="About Me" />
+          <button type="submit" class="btn">Unggah Foto</button>
+        </div> -->
+      </section>
+      <!-- SECTION ACCOUNT SETTING END -->
+
+      <div class="card-img">
+        <img src="assets/img/profile.jpg" width="250px" /> <br />
+        <button type="submit" class="btn">Unggah Foto</button>
       </div>
+
+      <!-- SECTION REGISTRASI START -->
+      <section class="form" style="background-color: #ffd8a9"></section>
+      <!-- SECTION REGISTRASI END -->
     </section>
-    <!-- SECTION REGISTRASI END -->
 
     <!-- Footer -->
     <div class="footers">
